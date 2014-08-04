@@ -2,6 +2,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Palatino Linotype", sans-serif;
 }
 
 #container {
@@ -12,22 +13,31 @@ html, body {
 }
 
 #banner {
-  position: relative;
+  position: absolute;
+  top: 0px;
   width: 100%;
   min-width: 800px;
   height: 150px;
   background-color: #000000;
 }
 
-#banner-text {
-  position: absolute;
-  top: 0px;
-  width: 100%;
+#banner-img {
+  position: relative;
+  float: left;
+  width: 150px;
   height: 150px;
+  background-color: #000000;
+}
 
+#banner-text {
+  position: relative;
+  width: auto;
+  min-width: 650px;
+  height: 150px;
+  margin: auto;
+  
   color: #ec2802;
   font-size: 50pt;
-  font-family: "Courier New", sans-serif;
   line-height: 150px;
   text-align: center;
 }
@@ -36,18 +46,23 @@ html, body {
   position: fixed;
   width: 150px;
   top: 25%;
-  height: 60%;
-  bottom: 15%;
-
+  height: auto;
+  
   background-color: #000000;
   border: 1px solid black;
 
-  -webkit-border-top-right-radius: 20px;
-  -webkit-border-bottom-right-radius: 20px;
-  -moz-border-radius-topright: 20px;
-  -moz-border-radius-bottomright: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#navbar hr {
+  background-color: #7F7F7F;
+  border: 1px solid #7F7F7F;
+  margin: 0px 10px 0px 10px;
 }
 
 .navbar-section {
@@ -57,30 +72,25 @@ html, body {
   margin: 10px;
   background-color: #000000;
   
-  color: #ec2802;
-  font-family: "Palatino Linotype", sans-serif;
-  font-size: 20pt;
+  color: #7F7F7F;
+  font-size: 18pt;
   line-height: 100px;
   text-align: center;
   
-  -webkit-border-radius: 20px;
-  -webkit-transition: background-color 500ms, color 500ms;
-  -moz-border-radius: 20px;
-  -moz-transition: background-color 500ms, color 500ms;
-  border-radius: 20px;
-  transition: background-color 500ms, color 500ms;
+  -webkit-border-radius: 5px;
+  -webkit-transition: background-color 250ms, color 250ms;
+  -moz-border-radius: 5px;
+  -moz-transition: background-color 250ms, color 250ms;
+  border-radius: 5px;
+  transition: background-color 250ms, color 250ms;
 }
 
 .navbar-current {
-  background-color: #D41A1F;
-  
-  color: #CCCCCC;
+  background-color: #9E0508;
 }
 
 .navbar-section:hover {
   background-color: #D41A1F;
-  
-  color: #CCCCCC;
   
   -webkit-cursor: pointer;
   -moz-cursor: pointer;
@@ -88,18 +98,16 @@ html, body {
 }
 
 .navbar-current:hover {
+  background-color: #9E0508;
+  
   -webkit-cursor: auto;
   -moz-cursor: auto;
   cursor: auto;
 }
 
 a, a:visited {
-  color: #ec2802;
+  color: #7F7F7F;
   text-decoration: none;
-}
-
-a:hover {
-  color: #CCCCCC;
 }
 
 /* Animations */
@@ -108,19 +116,19 @@ a:hover {
   opacity: 0;
 
   -webkit-animation-name: banner;
-  -webkit-animation-duration: 750ms;
+  -webkit-animation-duration: 500ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
   -moz-animation-name: banner;
-  -moz-animation-duration: 750ms;
+  -moz-animation-duration: 500ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
   animation-name: banner;
-  animation-duration: 750ms;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -160,22 +168,22 @@ a:hover {
   left: -150px;
 
   -webkit-animation-name: navbar;
-  -webkit-animation-duration: 750ms;
-  -webkit-animation-delay: 750ms;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-delay: 500ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
   -moz-animation-name: navbar;
-  -moz-animation-duration: 750ms;
-  -moz-animation-delay: 750ms;
+  -moz-animation-duration: 500ms;
+  -moz-animation-delay: 500ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
   animation-name: navbar;
-  animation-duration: 750ms;
-  animation-delay: 750ms;
+  animation-duration: 500ms;
+  animation-delay: 500ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
