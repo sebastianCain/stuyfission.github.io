@@ -4,7 +4,9 @@
 
   <head>
     <title>FTC 310</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="data/style.css" />
+    <link rel='stylesheet' type='text/css' href='data/animation.css' />
+    <script type='text/javascript' src='script/navbar.js'></script>
   </head>
 
   <body>
@@ -20,33 +22,14 @@
 
 
       <div id="content">
-
       </div>
 
-      <div id="navbar">
-        <a href="index.html">
-          <div class="navbar-section">
-            Home
-          </div>
-        </a>
-        <hr />
-        <a href="pictures.html">
-          <div class="navbar-section">
-            Pictures
-          </div>
-        </a>
-        <hr />
-        <a href="about.html">
-          <div class="navbar-section">
-            About Us
-          </div>
-        </a>
-        <hr />
-        <div class="navbar-section navbar-current">
-          Contact Us
-        </div>
-      </div>
+      <div id="navbar"></div>
     </div>
+    <script type='text/javascript'>
+    var navParent = document.getElementById('navbar');
+    generateNavBar(navParent, 'contact');
+    </script>
   </body>
 
 </html>
