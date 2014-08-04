@@ -1,6 +1,10 @@
-FTC web repo
+FTC web repository
 ========
-
 Convention:
-- trailing newline
-- 2 space tabs (no tab characters)
+- All files must have a trailing newline.
+- Use 2 space tabs (no tab characters).
+- Align parameters, tags, function calls, etc.
+- Have succinct documentation for everything:
+  - Use full sentences.
+  - Use correct punctuation.
+  - Assume random people are reading this.

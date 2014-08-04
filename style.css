@@ -38,10 +38,10 @@ html, body {
   top: 25%;
   height: 60%;
   bottom: 15%;
-  
+
   background-color: #000000;
   border: 1px solid black;
-  
+
   -webkit-border-top-right-radius: 20px;
   -webkit-border-bottom-right-radius: 20px;
   -moz-border-radius-topright: 20px;
@@ -106,7 +106,7 @@ html, body {
 
 #navbar {
   left: -150px;
-  
+
   -webkit-animation-name: navbar;
   -webkit-animation-duration: 750ms;
   -webkit-animation-delay: 750ms;
