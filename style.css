@@ -50,6 +50,42 @@ html, body {
   border-bottom-right-radius: 20px;
 }
 
+.navbar-section {
+  position: relative;
+  width: 130px;
+  height: auto;
+  margin: 10px;
+  background-color: #000000;
+  
+  color: #ec2802;
+  font-family: "Palatino Linotype", sans-serif;
+  font-size: 20pt;
+  line-height: 100px;
+  text-align: center;
+  
+  -webkit-border-radius: 20px;
+  -webkit-transition: background-color 500ms, color 500ms;
+  -moz-border-radius: 20px;
+  -moz-transition: background-color 500ms, color 500ms;
+  border-radius: 20px;
+  transition: background-color 500ms, color 500ms;
+}
+
+.navbar-section:hover {
+  background-color: #D41A1F;
+  
+  color: #CCCCCC;
+  
+  -webkit-cursor: pointer;
+  -moz-cursor: pointer;
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #ec2802;
+}
+
 /* Animations */
 
 #banner {
