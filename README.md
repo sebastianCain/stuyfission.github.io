@@ -1,6 +1,5 @@
 FTC web repo
 ========
-Web repository
 
 Convention:
 - trailing newline
