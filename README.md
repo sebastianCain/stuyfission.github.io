@@ -1,4 +1,4 @@
-FTC web repository
+\FTC web repository
 ========
 Convention:
 - All files must have a trailing newline.
@@ -8,3 +8,4 @@ Convention:
   - Use full sentences.
   - Use correct punctuation.
   - Assume random people are reading this.
+- Always use single quotes unless nesting quotation marks.
