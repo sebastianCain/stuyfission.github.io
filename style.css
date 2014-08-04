@@ -71,6 +71,12 @@ html, body {
   transition: background-color 500ms, color 500ms;
 }
 
+.navbar-current {
+  background-color: #D41A1F;
+  
+  color: #CCCCCC;
+}
+
 .navbar-section:hover {
   background-color: #D41A1F;
   
@@ -81,9 +87,19 @@ html, body {
   cursor: pointer;
 }
 
+.navbar-current:hover {
+  -webkit-cursor: auto;
+  -moz-cursor: auto;
+  cursor: auto;
+}
+
 a, a:visited {
-  text-decoration: none;
   color: #ec2802;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CCCCCC;
 }
 
 /* Animations */
