@@ -21,7 +21,7 @@ html, body {
   background-color: #000000;
 }
 
-#banner-img {
+.banner-img {
   position: relative;
   float: left;
   width: 150px;
@@ -29,7 +29,7 @@ html, body {
   background-color: #000000;
 }
 
-#banner-text {
+.banner-text {
   position: relative;
   width: auto;
   min-width: 650px;

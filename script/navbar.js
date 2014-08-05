@@ -5,65 +5,57 @@
  * the FTC website.
  */
 function generateNavBar(parent, currentPage) {
-
-  // Initializes necessary elements.
-  var homeA = document.createElement('A');
-  var picturesA = document.createElement('A');
-  var aboutA = document.createElement('A');
-  var contactA = document.createElement('A');
   
-  var homeDiv = document.createElement('DIV');
-  var picturesDiv = document.createElement('DIV');
-  var aboutDiv = document.createElement('DIV');
-  var contactDiv = document.createElement('DIV');
-  
-  var homeText = document.createTextNode('Home');
-  var picturesText = document.createTextNode('Pictures');
-  var aboutText = document.createTextNode('About Us');
-  var contactText = document.createTextNode('Contact Us');
-  
+  // Class names that are needed.
   var sectionClass = 'navbar-section';
   var currentClass = 'navbar-section navbar-current';
   
-  // Sets the class of the div depending on the page the user is on.
-  // Sets the URL for the link to direct to.
+  // Creates the necessary elements to append to the DOM depending
+  // on what page the user is currently on.
   if (currentPage === 'home') {
-    homeDiv.setAttribute('class', currentClass);
+    var homeDiv = createDiv(currentClass);
+    var homeA = createA();
   } else {
-    homeDiv.setAttribute('class', sectionClass);
-    homeA.setAttribute('href', 'index.html');
+    var homeDiv = createDiv(sectionClass);
+    var homeA = createA('index.html');
   }
   
   if (currentPage === 'pictures') {
-    picturesDiv.setAttribute('class', currentClass);
+    var picturesDiv = createDiv(currentClass);
+    var picturesA = createA();
   } else {
-    picturesDiv.setAttribute('class', sectionClass);
-    picturesA.setAttribute('href', 'pictures.html');
+    var picturesDiv = createDiv(sectionClass);
+    var picturesA = createA('pictures.html');
   }
   
   if (currentPage === 'about') {
-    aboutDiv.setAttribute('class', currentClass);
+    var aboutDiv = createDiv(currentClass);
+    var aboutA = createA();
   } else {
-    aboutDiv.setAttribute('class', sectionClass);
-    aboutA.setAttribute('href', 'about.html');
+    var aboutDiv = createDiv(sectionClass);
+    var aboutA = createA('about.html');
   }
   
   if (currentPage === 'contact') {
-    contactDiv.setAttribute('class', currentClass);
+    var contactDiv = createDiv(currentClass);
+    var contactA = createA();
   } else {
-    contactDiv.setAttribute('class', sectionClass);
-    contactA.setAttribute('href', 'contact.html');
+    var contactDiv = createDiv(sectionClass);
+    var contactA = createA('contact.html');
   }
   
   // Constructs nested elements.
   homeA.appendChild(homeDiv);
-  homeDiv.appendChild(homeText);
+  addText(homeDiv, 'Home');
+  
   picturesA.appendChild(picturesDiv);
-  picturesDiv.appendChild(picturesText);
+  addText(picturesDiv, 'Pictures');
+  
   aboutA.appendChild(aboutDiv);
-  aboutDiv.appendChild(aboutText);
+  addText(aboutDiv, 'About Us');
+  
   contactA.appendChild(contactDiv);
-  contactDiv.appendChild(contactText);
+  addText(contactDiv, 'Contact Us');
   
   // Appends elements to parent div with horizontal rules in between.
   parent.appendChild(homeA);
