@@ -41,7 +41,6 @@ html, body {
   position: relative;
   width: calc(100% - 100px);
   height: 100px;
-  background-color: #ABCDEF;
 
   color: #ec2802;
   font-size: 40pt;
@@ -90,6 +89,10 @@ html, body {
   transition: left 500ms;
 }
 
+#navbar a, a:visited {
+  color: #BDBDBD;
+}
+
 #navbar hr {
   background-color: #BDBDBD;
   border: 1px solid #BDBDBD;
@@ -132,24 +135,22 @@ html, body {
 }
 
 /* Global Styles and Class */
-
 a, a:visited {
-  color: #BDBDBD;
   text-decoration: none;
 }
 
-#center {
+.center {
   text-align: center;
 }
 
-#large {
-  font-size: 24pt;
+.large {
+  font-size: 40pt;
 }
 
-#medium {
-  font-size: 18pt;
+.medium {
+  font-size: 20pt;
 }
 
-#small {
+.small {
   font-size: 12pt;
 }
