@@ -1,3 +1,8 @@
+/*
+ * This CSS file contains most of the styling needed in the FTC webpage.
+ * Author: Alvin Lin (alvin.lin@stuypulse.com)
+ */
+
 html, body {
   width: 100%;
   height: 100%;
@@ -35,7 +40,7 @@ html, body {
   min-width: 650px;
   height: 150px;
   margin: auto;
-  
+
   color: #ec2802;
   font-size: 50pt;
   line-height: 150px;
@@ -47,7 +52,7 @@ html, body {
   width: 150px;
   top: 25%;
   height: auto;
-  
+
   background-color: #000000;
   border: 1px solid black;
 
@@ -71,12 +76,12 @@ html, body {
   height: auto;
   margin: 10px;
   background-color: #000000;
-  
+
   color: #7F7F7F;
   font-size: 18pt;
   line-height: 100px;
   text-align: center;
-  
+
   -webkit-border-radius: 5px;
   -webkit-transition: background-color 250ms, color 250ms;
   -moz-border-radius: 5px;
@@ -91,7 +96,7 @@ html, body {
 
 .navbar-section:hover {
   background-color: #D41A1F;
-  
+
   -webkit-cursor: pointer;
   -moz-cursor: pointer;
   cursor: pointer;
@@ -99,7 +104,7 @@ html, body {
 
 .navbar-current:hover {
   background-color: #9E0508;
-  
+
   -webkit-cursor: auto;
   -moz-cursor: auto;
   cursor: auto;

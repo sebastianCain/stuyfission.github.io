@@ -4,12 +4,13 @@
  * This is used specifically to generate the navigation bar for
  * the FTC website.
  */
+
 function generateNavBar(parent, currentPage) {
-  
+
   // Class names that are needed.
   var sectionClass = 'navbar-section';
   var currentClass = 'navbar-section navbar-current';
-  
+
   // Creates the necessary elements to append to the DOM depending
   // on what page the user is currently on.
   if (currentPage === 'home') {
@@ -19,7 +20,7 @@ function generateNavBar(parent, currentPage) {
     var homeDiv = createDiv(sectionClass);
     var homeA = createA('index.html');
   }
-  
+
   if (currentPage === 'pictures') {
     var picturesDiv = createDiv(currentClass);
     var picturesA = createA();
@@ -27,7 +28,7 @@ function generateNavBar(parent, currentPage) {
     var picturesDiv = createDiv(sectionClass);
     var picturesA = createA('pictures.html');
   }
-  
+
   if (currentPage === 'about') {
     var aboutDiv = createDiv(currentClass);
     var aboutA = createA();
@@ -35,7 +36,7 @@ function generateNavBar(parent, currentPage) {
     var aboutDiv = createDiv(sectionClass);
     var aboutA = createA('about.html');
   }
-  
+
   if (currentPage === 'contact') {
     var contactDiv = createDiv(currentClass);
     var contactA = createA();
@@ -43,20 +44,20 @@ function generateNavBar(parent, currentPage) {
     var contactDiv = createDiv(sectionClass);
     var contactA = createA('contact.html');
   }
-  
+
   // Constructs nested elements.
   homeA.appendChild(homeDiv);
   addText(homeDiv, 'Home');
-  
+
   picturesA.appendChild(picturesDiv);
   addText(picturesDiv, 'Pictures');
-  
+
   aboutA.appendChild(aboutDiv);
   addText(aboutDiv, 'About Us');
-  
+
   contactA.appendChild(contactDiv);
   addText(contactDiv, 'Contact Us');
-  
+
   // Appends elements to parent div with horizontal rules in between.
   parent.appendChild(homeA);
   parent.appendChild(document.createElement('HR'));
