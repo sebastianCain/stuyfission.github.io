@@ -36,6 +36,14 @@ function generateNavBar(parent, currentPage) {
     var aboutA = createA('about.html');
   }
 
+  if (currentPage === 'first') {
+    var firstDiv = createDiv(currentClass);
+    var firstA = createA();
+  } else {
+    var firstDiv = createDiv(sectionClass);
+    var firstA = createA('first.html');
+  }
+
   if (currentPage === 'contact') {
     var contactDiv = createDiv(currentClass);
     var contactA = createA();
@@ -54,6 +62,9 @@ function generateNavBar(parent, currentPage) {
   aboutA.appendChild(aboutDiv);
   addText(aboutDiv, 'About Us');
 
+  firstA.appendChild(firstDiv);
+  addText(firstDiv, 'FIRST');
+
   contactA.appendChild(contactDiv);
   addText(contactDiv, 'Contact Us');
 
@@ -63,6 +74,8 @@ function generateNavBar(parent, currentPage) {
   parent.appendChild(picturesA);
   parent.appendChild(document.createElement('HR'));
   parent.appendChild(aboutA);
+  parent.appendChild(document.createElement('HR'));
+  parent.appendChild(firstA);
   parent.appendChild(document.createElement('HR'));
   parent.appendChild(contactA);
 };

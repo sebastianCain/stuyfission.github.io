@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>FTC 310</title>
+    <link rel="shortcut icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' href='style/style.css' />
+    <link rel='stylesheet' type='text/css' href='style/animation.css' />
+    <script type='text/javascript' src='script/base.js'></script>
+    <script type='text/javascript' src='script/banner.js'></script>
+    <script type='text/javascript' src='script/navbar.js'></script>
+  </head>
+
+  <body>
+    <div id='container'>
+      <div id='banner'></div>
+
+      <div id='content-container'>
+      </div>
+
+      <div id='navbar-container'>
+        <div id='navbar'></div>
+      </div>
+    </div>
+    <script type='text/javascript'>
+    var banner = document.getElementById('banner');
+    generateBanner(banner);
+    var navbar = document.getElementById('navbar');
+    generateNavBar(navbar, 'first');
+    </script>
+  </body>
+
+</html>

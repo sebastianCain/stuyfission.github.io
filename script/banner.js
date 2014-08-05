@@ -7,8 +7,10 @@
 
 function generateBanner(parent) {
   var imgDiv = createDiv('banner-img');
+  var imgA = createA('index.html');
   var img = createImg('data/logo.jpg', 100, 100);
-  imgDiv.appendChild(img);
+  imgA.appendChild(img);
+  imgDiv.appendChild(imgA);
 
   var textDiv = createDiv('banner-text');
   addText(textDiv, 'Stuyvesant FTC Fission 310');

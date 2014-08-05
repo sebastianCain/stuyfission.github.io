@@ -9,3 +9,4 @@ Convention:
   - Use correct punctuation.
   - Assume random people are reading this.
 - Always use single quotes unless nesting quotation marks.
+- There is an 80 character limit per line.

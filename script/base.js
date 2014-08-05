@@ -9,11 +9,14 @@
 // This function takes a link and creates an <a> element directing to the
 // given link. This returns the <a> element.
 // If no link is given, it will return an <a> element with no attributes.
-function createA(href) {
+function createA(href, className) {
   var a = document.createElement('A');
 
-  if (href !== undefined) {
+  if (href !== undefined && href !== null) {
     a.setAttribute('href', href);
+  }
+  if (className !== undefined) {
+    a.setAttribute('class', className);
   }
 
   return a;
