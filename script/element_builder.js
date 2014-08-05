@@ -1,7 +1,7 @@
 /**
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  *
- * Some basic functions to help generate elements hierarchies in a
+ * Some basic functions to help generate element hierarchies in a
  * webpage.
  *
  * @todo This class still needs to be tested.
@@ -10,8 +10,8 @@
 
 // This class takes a tag and a class name and creates a 'root' element with
 // the given tag and class name. Other tags and elements can be built off this
-// class.
-function Element (tag, className) {
+// 'root' element.
+function Hierarchy (tag, className) {
   this.root_ = document.createElement(tag);
 
   if (className !== undefined) {
@@ -25,7 +25,7 @@ function Element (tag, className) {
 // This function takes a link and appends an <a> element directing to the
 // given link to the root element.
 // If no link is given, it will append an <a> element with no attributes.
-Element.prototype.createA = function(href) {
+Hierarchy.prototype.createA = function(href) {
   var a = document.createElement('A');
 
   if (href !== undefined) {
@@ -40,7 +40,7 @@ Element.prototype.createA = function(href) {
 // class name to the root element.
 // If no class name is specified, it will append a <div> with no
 // attributes.
-Element.prototype.createDiv = function(className) {
+Hierarchy.prototype.createDiv = function(className) {
   var div = document.createElement.('DIV');
 
   if (className !== undefined) {
@@ -56,7 +56,7 @@ Element.prototype.createDiv = function(className) {
 // and height to the root element.
 // If no width and height are specified, the image will default to the size
 // of the given image.
-Element.prototype.createImg = function(src, className, width, height) {
+Hierarchy.prototype.createImg = function(src, className, width, height) {
   var img = document.createElement('IMG');
   img.setAttribute('src', src);
 
@@ -76,13 +76,13 @@ Element.prototype.createImg = function(src, className, width, height) {
 
 // This function takes text as an argument and appends a text node with the
 // given text to the last element added.
-Element.prototype.addText = function(parent, text) {
+Hierarchy.prototype.addText = function(parent, text) {
   var textNode = document.createTextNode(text);
   this.lastElementAdded_.appendChild(textNode);
 };
 
 // This function adds custom attribute to the last element that you added
 // to the class.
-Element.prototype.setAttribute = function(attribute, value) {
+Hierarchy.prototype.setAttribute = function(attribute, value) {
   this.lastElementAdded_.setAttribute(attribute, value);
 };

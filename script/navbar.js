@@ -6,7 +6,6 @@
  */
 
 function generateNavBar(parent, currentPage) {
-
   // Class names that are needed.
   var sectionClass = 'navbar-section';
   var currentClass = 'navbar-section navbar-current';
