@@ -1,4 +1,4 @@
-\FTC web repository
+FTC web repository
 ========
 Convention:
 - All files must have a trailing newline.
