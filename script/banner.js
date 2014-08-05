@@ -11,7 +11,7 @@ function generateBanner(parent) {
   imgDiv.appendChild(img);
 
   var textDiv = createDiv('banner-text');
-  addText(textDiv, 'Stuyvesant FTC 310');
+  addText(textDiv, 'Stuyvesant FTC Fission 310');
 
   parent.appendChild(imgDiv);
   parent.appendChild(textDiv);
