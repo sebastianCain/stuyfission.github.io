@@ -62,8 +62,14 @@ html, body {
   position: absolute;
   top: 100px;
   left: 0px;
-  bottom: 0px;
+  bottom: 10px;
   width: 200px;
+  height: auto;
+  border: 1px solid black;
+}
+
+#navbar-container:hover #navbar {
+  left: 0px;
 }
 
 #navbar {
@@ -85,10 +91,6 @@ html, body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: left 500ms;
-}
-
-#navbar-container:hover #navbar {
-  left: 0px;
 }
 
 #navbar hr {
