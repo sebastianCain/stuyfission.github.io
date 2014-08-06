@@ -135,6 +135,14 @@ html, body {
   cursor: auto;
 }
 
+#footer {
+  position: relative;
+  width: 100%;
+  top: calc(100% - 25px);
+  height: 25px;
+  background-color: #808080;
+};
+
 /* Global Styles and Class */
 a, a:visited {
   text-decoration: none;
