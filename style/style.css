@@ -54,6 +54,7 @@ html, body {
   top: 100px;
   bottom: 0px;
   left: 200px;
+  padding-bottom: 100px;
 }
 
 #navbar-container {
@@ -148,7 +149,7 @@ a, a:visited {
 }
 
 .medium {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 .small {
