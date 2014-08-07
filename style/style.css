@@ -6,24 +6,19 @@
 /* Page Structure */
 
 html, body {
-  width: 100%;
-  height: 100%;
   margin: 0px;
-  border: 0px;
   font-family: "Palatino Linotype", sans-serif;
+  background-color: #EBEBEB;
 }
 
 #container {
-  position: absolute;
+  min-width: 800px;
   width: 100%;
   height: 100%;
-  background-color: #EBEBEB;
-  overflow: auto;
 }
 
 #banner {
-  position: absolute;
-  top: 0px;
+  position: relative;
   width: 100%;
   min-width: 800px;
   height: 100px;
@@ -31,119 +26,49 @@ html, body {
 }
 
 .banner-img {
-  position: relative;
   float: left;
   width: 100px;
   height: 100px;
 }
 
 .banner-text {
-  position: relative;
   width: calc(100% - 100px);
   height: 100px;
 
   color: #ec2802;
   font-size: 40pt;
+  line-height: 100px;
   text-align: center;
-  overflow: auto;
 }
 
 #content-container {
-  position: relative;
-  width: calc(100% - 200px);
-  top: 100px;
-  bottom: 0px;
-  left: 200px;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 100px;
-}
 
-#navbar-container {
-  position: fixed;
-  top: 100px;
-  left: 0px;
-  bottom: 0px;
-  width: 200px;
-}
-
-#navbar-container:hover #navbar {
-  left: 0px;
-}
-
-#navbar {
-  position: fixed;
-  top: 200px;
-  left: -142px;
-  width: 150px;
-  height: auto;
-
-  background-color: #000000;
-  border: 1px solid black;
-
-  -webkit-border-top-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-transition: left 500ms;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -moz-transition: left 500ms;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: left 500ms;
-}
-
-#navbar a, a:visited {
-  color: #BDBDBD;
-}
-
-#navbar hr {
-  background-color: #BDBDBD;
-  border: 1px solid #BDBDBD;
-  margin: 0px 10px 0px 10px;
-}
-
-.navbar-section {
-  position: relative;
-  width: 130px;
-  height: auto;
-  margin: 10px;
-  background-color: #000000;
-
-  font-size: 18pt;
-  line-height: 100px;
-  text-align: center;
-
-  -webkit-border-radius: 5px;
-  -webkit-transition: background-color 250ms, color 250ms;
-  -moz-border-radius: 5px;
-  -moz-transition: background-color 250ms, color 250ms;
-  border-radius: 5px;
-  transition: background-color 250ms, color 250ms;
-}
-
-.navbar-current {
-  background-color: #9E0508;
-}
-
-.navbar-section:hover {
-  background-color: #D41A1F;
-}
-
-.navbar-current:hover {
-  background-color: #9E0508;
-
-  -webkit-cursor: auto;
-  -moz-cursor: auto;
-  cursor: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #footer {
-  position: relative;
+  position: fixed;
   width: 100%;
-  top: calc(100% - 25px);
-  height: 25px;
-  background-color: #808080;
-};
+  bottom: 0px;
+  height: 20px;
+  background-color: #CACACA;
+
+  line-height: 20px;
+  padding-left: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* Global Styles and Class */
+
 a, a:visited {
   text-decoration: none;
 }
@@ -162,4 +87,58 @@ a, a:visited {
 
 .small {
   font-size: 12pt;
+}
+
+/* About Us */
+
+#about-intro {
+  margin: auto;
+}
+
+#about-bio {
+  margin: 50px auto;
+}
+
+#about-bio a, a:visited {
+  color: #000000;
+  -webkit-cursor: default;
+  -moz-cursor: default;
+  cursor: default;
+}
+
+.about-bio-table td {
+  padding: 10px;
+}
+
+.about-bio-table-name {
+  background-color: #D4D4D4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.about-bio-table-name-title {
+  color: #808080;
+}
+
+.about-ftc-image {
+  width: 200px;
+  height: 200px;
+}
+
+.about-portrait-image {
+  width: 150px;
+  height: 200px;
+}
+
+/* Pictures */
+
+#pictures-content {
+  margin: auto;
+  text-align: center;
+}
+
+#pictures-content img {
+  width: 250px;
+  height: 250px;
 }

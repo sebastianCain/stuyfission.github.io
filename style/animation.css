@@ -4,7 +4,7 @@
  */
 
 #banner {
-  opacity: 0;
+  top: -150px;
 
   -webkit-animation-name: banner;
   -webkit-animation-duration: 500ms;
@@ -26,31 +26,74 @@
 }
 @-webkit-keyframes banner {
   0% {
-    opacity: 0;
     top: -150px;
   }
   100% {
-    opacity: 1;
     top: 0px;
   }
 }
 @-moz-keyframes banner {
   0% {
-    opacity: 0;
     top: -150px;
   }
   100% {
-    opacity: 1;
     top: 0px;
   }
 }
 @keyframes banner {
   0% {
-    opacity: 0;
     top: -150px;
   }
   100% {
-    opacity: 1;
     top: 0px;
+  }
+}
+
+#content-container {
+  opacity: 0;
+
+  -webkit-animation-name: content-container;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-delay: 500ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-name: content-container;
+  -moz-animation-duration: 500ms;
+  -moz-animation-delay: 500ms;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+
+  animation-name: content-container;
+  animation-duration: 500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes content-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes content-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes content-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
