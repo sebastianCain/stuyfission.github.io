@@ -97,3 +97,64 @@
     opacity: 1;
   }
 }
+
+#navbar {
+  left: -142px;
+
+  -webkit-animation-name: navbar;
+  -webkit-animation-duration: 1500ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-name: navbar;
+  -moz-animation-duration: 1500ms;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+
+  animation-name: navbar;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes navbar {
+  0% {
+    left: -142px;
+  }
+  25% {
+    left: 0px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: -142px;
+  }
+}
+@-moz-keyframes navbar {
+  0% {
+    left: -142px;
+  }
+  25% {
+    left: 0px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: -142px;
+  }
+}
+@keyframes navbar {
+  0% {
+    left: -142px;
+  }
+  25% {
+    left: 0px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: -142px;
+  }
+}

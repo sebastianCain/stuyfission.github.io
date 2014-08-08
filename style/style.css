@@ -46,7 +46,7 @@ html, body {
 #content-container {
   width: 100%;
   height: 100%;
-  padding: 50px 10% 100px 10%;
+  padding: 50px 15% 100px 15%;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -92,7 +92,7 @@ a, a:visited {
 
 /* Homepage */
 
-#feed {
+#homepage-content-feed {
   position: relative;
   float: left;
   width: 80%;
@@ -100,7 +100,7 @@ a, a:visited {
   min-width: 600px;
 }
 
-#sideBar {
+#homepage-content-sidebar {
   position: relative;
   float: right;
   width: 20%;
@@ -126,34 +126,34 @@ a, a:visited {
 
 /* FIRST */
 
-#first {
+#first-content {
   margin: auto;
 }
 
-#first img {
+#first-content img {
   width: 200px;
   height: 200px;
 }
 
-.first-intro td {
+.first-content-intro td {
   padding: 20px;
 }
 
-.first-content {
+.first-content-body {
   width: 100%;
   height: auto;
 }
 
-.first-content img {
+.first-content-body img {
   width: auto;
   height: 200px;
 }
 
-.first-content td {
+.first-content-body td {
   padding: 10px;
 }
 
-.first-content-table-name {
+.first-content-body-table-name {
   font-size: 18pt;
   background-color: #D4D4D4;
   -webkit-border-radius: 5px;
@@ -163,58 +163,53 @@ a, a:visited {
 
 /* About Us */
 
-#about-intro {
+#about-content {
   margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 14pt;
 }
 
-#about-intro-github-link {
-  width: 80px;
-  padding: 0px 10px 0px 10px;
-  background-color: #D4D4D4;
-  -webkit-transition: background-color 500ms;
+.about-content-intro {
+  padding: 50px 10px 100px 10px;
+}
+
+.about-content-intro img {
+  width: auto;
+  height: 100px;
+  opacity: 0.5;
+
   -webkit-border-radius: 5px;
-  -moz-transition: background-color 500ms;
+  -webkit-transition: opacity 1000ms;
   -moz-border-radius: 5px;
-  transition: background-color 500ms;
-  border-radius: 5px;
+  -moz-transition: opacity 1000ms;
+  border-radius: 20px;
+  transition: opacity 1000ms;
 }
 
-#about-intro-github-link:hover {
-  background-color: #A6A6A6;
+.about-content-intro img:hover {
+  opacity: 1;
 }
 
-#about-bio {
-  margin: 50px auto;
-}
-
-#about-bio a, a:visited {
-  color: #000000;
-  -webkit-cursor: default;
-  -moz-cursor: default;
-  cursor: default;
-}
-
-.about-bio-table td {
-  padding: 10px;
-}
-
-.about-bio-table-name {
+.about-content-bio-header {
+  padding-left: 10px;
   background-color: #D4D4D4;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-.about-bio-table-name-title {
+.about-content-bio-header span:nth-child(2) {
   color: #808080;
 }
 
-.about-ftc-image {
-  width: 200px;
-  height: 200px;
+.about-content-bio-text td:nth-child(2) {
+  padding: 0px 10px 0px 10px;
+  font-size: 13pt;
 }
 
-.about-portrait-image {
+.about-content-bio-text img {
   width: 150px;
   height: 200px;
 }
