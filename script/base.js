@@ -49,20 +49,20 @@ function generateNavBar(parent, currentPage) {
     var picturesA = createA('pictures.html');
   }
 
-  if (currentPage === 'about') {
-    var aboutDiv = createDiv(currentClass);
-    var aboutA = createA();
-  } else {
-    var aboutDiv = createDiv(sectionClass);
-    var aboutA = createA('about.html');
-  }
-
   if (currentPage === 'first') {
     var firstDiv = createDiv(currentClass);
     var firstA = createA();
   } else {
     var firstDiv = createDiv(sectionClass);
     var firstA = createA('first.html');
+  }
+
+  if (currentPage === 'about') {
+    var aboutDiv = createDiv(currentClass);
+    var aboutA = createA();
+  } else {
+    var aboutDiv = createDiv(sectionClass);
+    var aboutA = createA('about.html');
   }
 
   if (currentPage === 'contact') {
@@ -80,11 +80,11 @@ function generateNavBar(parent, currentPage) {
   picturesA.appendChild(picturesDiv);
   addText(picturesDiv, 'Pictures');
 
-  aboutA.appendChild(aboutDiv);
-  addText(aboutDiv, 'About Us');
-
   firstA.appendChild(firstDiv);
   addText(firstDiv, 'FIRST');
+
+  aboutA.appendChild(aboutDiv);
+  addText(aboutDiv, 'About Us');
 
   contactA.appendChild(contactDiv);
   addText(contactDiv, 'Contact Us');
