@@ -71,6 +71,7 @@ html, body {
 
 a, a:visited {
   text-decoration: none;
+  color: #000000;
 }
 
 .center {
@@ -107,6 +108,59 @@ a, a:visited {
   min-width: 200px;
 }
 
+/* Pictures */
+
+#pictures-content table {
+  margin: auto;
+  text-align: center;
+}
+
+#pictures-content td {
+  padding: 10px;
+}
+
+#pictures-content img {
+  width: 250px;
+  height: auto;
+}
+
+/* FIRST */
+
+#first {
+  margin: auto;
+}
+
+#first img {
+  width: 200px;
+  height: 200px;
+}
+
+.first-intro td {
+  padding: 20px;
+}
+
+.first-content {
+  width: 100%;
+  height: auto;
+}
+
+.first-content img {
+  width: auto;
+  height: 200px;
+}
+
+.first-content td {
+  padding: 10px;
+}
+
+.first-content-table-name {
+  font-size: 18pt;
+  background-color: #D4D4D4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 /* About Us */
 
 #about-intro {
@@ -114,7 +168,7 @@ a, a:visited {
 }
 
 #about-intro-github-link {
-  width: 100px;
+  width: 80px;
   padding: 0px 10px 0px 10px;
   background-color: #D4D4D4;
   -webkit-transition: background-color 500ms;
@@ -163,16 +217,4 @@ a, a:visited {
 .about-portrait-image {
   width: 150px;
   height: 200px;
-}
-
-/* Pictures */
-
-#pictures-content {
-  margin: auto;
-  text-align: center;
-}
-
-#pictures-content img {
-  width: 250px;
-  height: auto;
 }
