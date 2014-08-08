@@ -22,7 +22,9 @@ html, body {
   width: 100%;
   min-width: 800px;
   height: 100px;
-  background-color: #000000;
+  background-image: -webkit-linear-gradient(to right, #000000, #696969, #000000);
+  background-image: -moz-linear-gradient(to right, #000000, #696969, #000000);
+  background-image: linear-gradient(to right, #000000, #696969, #000000);
 }
 
 .banner-img {
@@ -93,6 +95,22 @@ a, a:visited {
 
 #about-intro {
   margin: auto;
+}
+
+#about-intro-github-link {
+  width: 100px;
+  padding: 0px 10px 0px 10px;
+  background-color: #D4D4D4;
+  -webkit-transition: background-color 500ms;
+  -webkit-border-radius: 5px;
+  -moz-transition: background-color 500ms;
+  -moz-border-radius: 5px;
+  transition: background-color 500ms;
+  border-radius: 5px;
+}
+
+#about-intro-github-link:hover {
+  background-color: #A6A6A6;
 }
 
 #about-bio {
