@@ -7,7 +7,6 @@
 
 html, body {
   margin: 0px;
-  font-family: "Palatino Linotype", sans-serif;
   background-color: #EBEBEB;
 }
 
@@ -15,6 +14,9 @@ html, body {
   min-width: 800px;
   width: 100%;
   height: 100%;
+  font-family: "Palatino Linotype", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #banner {
@@ -154,20 +156,13 @@ a, a:visited {
 }
 
 .first-content-body-table-name {
-  font-size: 18pt;
   background-color: #D4D4D4;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 /* About Us */
 
 #about-content {
   margin: auto;
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 14pt;
 }
 
 .about-content-intro {
@@ -179,9 +174,9 @@ a, a:visited {
   height: 100px;
   opacity: 0.5;
 
-  -webkit-transition: opacity 1000ms;
-  -moz-transition: opacity 1000ms;
-  transition: opacity 1000ms;
+  -webkit-transition: opacity 750ms;
+  -moz-transition: opacity 750ms;
+  transition: opacity 750ms;
 }
 
 .about-content-intro img:hover {
@@ -190,10 +185,6 @@ a, a:visited {
 
 .about-content-bio-header {
   background-color: #D4D4D4;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 .about-content-bio-header td {
@@ -204,12 +195,18 @@ a, a:visited {
   color: #808080;
 }
 
-.about-content-bio-text td:last-child {
-  padding: 0px 10px 0px 10px;
-  font-size: 13pt;
-}
-
 .about-content-bio-text img {
   width: 150px;
   height: 200px;
+  margin-right: 10px;
+}
+
+/* Contact Us */
+
+#contact-content table {
+  margin: auto;
+}
+
+.contact-content-intro {
+  padding: 50px 10px 100px 10px;
 }
