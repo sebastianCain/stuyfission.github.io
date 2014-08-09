@@ -14,7 +14,7 @@ html, body {
   min-width: 800px;
   width: 100%;
   height: 100%;
-  font-family: "Palatino Linotype", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -185,17 +185,23 @@ a, a:visited {
 
 .about-content-bio-header {
   background-color: #D4D4D4;
-}
-
-.about-content-bio-header td {
   padding-left: 10px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .about-content-bio-header span:last-child {
   color: #808080;
 }
 
+.about-content-bio-text {
+  padding-right: 10px;
+}
+
 .about-content-bio-text img {
+  float: left;
   width: 150px;
   height: 200px;
   margin-right: 10px;
