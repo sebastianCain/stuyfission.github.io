@@ -16,6 +16,7 @@
 
 #navbar {
   position: fixed;
+  /* Hacky way to center the navbar vertically */
   top: 50%;
   margin-top: -241.5px;
   left: -142px;
