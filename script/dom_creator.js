@@ -10,7 +10,7 @@
 // given link. This returns the <a> element.
 // If no link is given, it will return an <a> element with no attributes.
 function createA(href, className) {
-  var a = document.createElement('A');
+  var a = document.createElement('a');
 
   if (href !== undefined && href !== null) {
     a.setAttribute('href', href);
@@ -27,7 +27,7 @@ function createA(href, className) {
 // If no class name is provided, it will just create a <div> element
 // with no attributes.
 function createDiv(className, id) {
-  var div = document.createElement('DIV');
+  var div = document.createElement('div');
 
   if (className !== undefined && className !== null) {
     div.setAttribute('class', className);
@@ -45,7 +45,7 @@ function createDiv(className, id) {
 // If no width and height are specified, the image will default to the size
 // of the given image.
 function createImg(src, width, height) {
-  var img = document.createElement('IMG');
+  var img = document.createElement('img');
   img.setAttribute('src', src);
 
   if (width !== undefined) {
