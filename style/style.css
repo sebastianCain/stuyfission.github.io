@@ -142,15 +142,15 @@ a, a:visited {
   margin: auto;
 }
 
-#first-content img {
+.first-content-table-intro {
+  padding: 50px 10px 100px 0px;
+}
+
+.first-content-table-intro img {
   float: left;
   width: 200px;
   height: 200px;
-  margin-right: 10px;
-}
-
-.first-content-table-intro {
-  padding: 50px 10px 100px 0px;
+  margin-right: 20px;
 }
 
 .first-content-table-header {
@@ -167,6 +167,13 @@ a, a:visited {
 
 .first-content-table-text {
   padding: 10px 10px 10px 0px;
+}
+
+.first-content-table-text img {
+  float: left;
+  width: 175px;
+  height: 175px;
+  margin-right: 10px;
 }
 
 /* About Us */
@@ -200,7 +207,7 @@ a, a:visited {
 }
 
 .about-content-bio-text {
-  padding: 10px 10px 0px 0px;
+  padding: 10px 10px 10px 0px;
 }
 
 .about-content-bio-text img {
