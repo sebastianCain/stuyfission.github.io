@@ -11,8 +11,8 @@ html, body {
 }
 
 #container {
-  min-width: 800px;
   width: 100%;
+  min-width: 1080px;
   height: 100%;
   font-family: "Open Sans", sans-serif;
   text-align: justify;
@@ -22,7 +22,6 @@ html, body {
 #banner {
   position: relative;
   width: 100%;
-  min-width: 800px;
   height: 100px;
   background-image: -webkit-linear-gradient(to right, #000000, #696969, #000000);
   background-image: -moz-linear-gradient(to right, #000000, #696969, #000000);
@@ -36,9 +35,8 @@ html, body {
 }
 
 .banner-text {
-  width: calc(100% - 100px);
+  width: 100%;
   height: 100px;
-
   color: #ec2802;
   font-size: 40pt;
   line-height: 100px;
@@ -104,7 +102,6 @@ a, a:visited {
   float: left;
   width: 80%;
   height: 100%;
-  min-width: 600px;
   padding: 10px 50px 0px 5px;
 }
 
@@ -112,7 +109,6 @@ a, a:visited {
   float: left;
   width: 20%;
   height: 100%;
-  min-width: 200px;
   padding: 10px 5px;
 
   background-color: #AFAFAF;
@@ -147,30 +143,19 @@ a, a:visited {
 }
 
 #first-content img {
+  float: left;
   width: 200px;
   height: 200px;
+  margin-right: 10px;
 }
 
-.first-content-intro td {
-  padding: 20px;
+.first-content-table-intro {
+  padding: 50px 10px 100px 0px;
 }
 
-.first-content-body {
-  width: 100%;
-  height: auto;
-}
-
-.first-content-body img {
-  width: auto;
-  height: 200px;
-}
-
-.first-content-body td {
-  padding: 10px;
-}
-
-.first-content-body-table-name {
+.first-content-table-header {
   background-color: #D4D4D4;
+  padding-left: 10px;
 
   -webkit-border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
@@ -178,6 +163,10 @@ a, a:visited {
   -moz-box-shadow:    5px 5px 5px 0px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   box-shadow:         5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.first-content-table-text {
+  padding: 10px 10px 10px 0px;
 }
 
 /* About Us */
