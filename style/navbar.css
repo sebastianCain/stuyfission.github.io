@@ -42,7 +42,7 @@
   transition: left 500ms;
 }
 
-#navbar a, a:visited {
+#navbar a, #navbar a:visited {
   color: #BDBDBD;
 }
 

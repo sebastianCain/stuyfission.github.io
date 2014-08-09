@@ -179,11 +179,8 @@ a, a:visited {
   height: 100px;
   opacity: 0.5;
 
-  -webkit-border-radius: 5px;
   -webkit-transition: opacity 1000ms;
-  -moz-border-radius: 5px;
   -moz-transition: opacity 1000ms;
-  border-radius: 20px;
   transition: opacity 1000ms;
 }
 
@@ -192,7 +189,6 @@ a, a:visited {
 }
 
 .about-content-bio-header {
-  padding-left: 10px;
   background-color: #D4D4D4;
 
   -webkit-border-radius: 5px;
@@ -200,11 +196,15 @@ a, a:visited {
   border-radius: 5px;
 }
 
-.about-content-bio-header span:nth-child(2) {
+.about-content-bio-header td {
+  padding-left: 10px;
+}
+
+.about-content-bio-header span:last-child {
   color: #808080;
 }
 
-.about-content-bio-text td:nth-child(2) {
+.about-content-bio-text td:last-child {
   padding: 0px 10px 0px 10px;
   font-size: 13pt;
 }
