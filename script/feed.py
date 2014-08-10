@@ -7,7 +7,7 @@ header = raw_input();
 print "Type your entire post:";
 text = raw_input();
 
-func = '\nappendToChild(\''+header+'\',\''+text+'\');';
+func = '\nappendToFeed(\''+header+'\',\''+text+'\');';
 
 feedjs.write(func);
 feedjs.write('\n');
