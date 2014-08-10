@@ -5,10 +5,25 @@
  */
 
 function appendToFeed(header, text) {
-  document.getElementById('homepage-content-feed-table');
-  var tableRow = document.createElement('tr');
-  var header = document.createElement('td');
-  tableData.setAttribute('class', 'homepage-content-feed-header');
-  var text = document.create
+  var feedTable = document.getElementById('homepage-content-feed-table');
 
+  var headerRow = document.createElement('tr');
+  var headerColumn = document.createElement('td');
+  headerColumn.setAttribute('class', 'homepage-content-feed-header medium');
+
+  var textRow = document.createElement('tr');
+  var textColumn = document.createElement('td');
+  textColumn.setAttribute('class', 'homepage-content-feed-text');
+
+  addText(headerColumn, header);
+  addText(textColumn, text);
+
+  headerRow.appendChild(headerColumn);
+  textRow.appendChild(textColumn);
+  feedTable.appendChild(headerRow);
+  feedTable.appendChild(textRow);
 }
+
+appendToFeed('Introducing our New Website', 'FTC is not just about building and programming a robot, and it\'s not just about standing in a lab and working reallylate on the night before competition. It\'s also aboutspreading the joy and excitement of STEM to communityaround us. With this website, we hope to show why we love robotics to everyone in any community, in the hope thatwe inspire kids of all ages to go out and make something.');
+
+appendToChild('Hi dere','tehasoidfha;weo');
