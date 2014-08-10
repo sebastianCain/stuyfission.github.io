@@ -122,7 +122,7 @@ a, a:visited {
 }
 
 .homepage-content-feed-text {
-  padding: 10px 10px 10px 0px;
+  padding: 10px 0px;
 }
 
 #homepage-content-media {
@@ -237,11 +237,25 @@ a, a:visited {
 /* Contact Us */
 
 #contact-content table {
+  width: 100%;
   margin: auto;
 }
 
 .contact-content-intro {
   padding: 50px 10px 100px 10px;
+}
+
+.contact-content-intro-email {
+  font-weight: bold;
+  color: #000000;
+
+  -webkit-transition: color 500ms;
+  -moz-transition: color 500ms;
+  transition: color 500ms;
+}
+
+.contact-content-intro-email:hover {
+  color: #808080;
 }
 
 /* Miscellaneous Styles */

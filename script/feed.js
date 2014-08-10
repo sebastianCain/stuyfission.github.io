@@ -13,7 +13,7 @@ function appendToFeed(header, text) {
 
   var textRow = document.createElement('tr');
   var textColumn = document.createElement('td');
-  textColumn.setAttribute('class', 'homepage-content-feed-text');
+  textColumn.setAttribute('class', 'homepage-content-feed-text small');
 
   addText(headerColumn, header);
   addText(textColumn, text);
