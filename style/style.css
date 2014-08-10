@@ -234,6 +234,10 @@ a, a:visited {
   margin-right: 10px;
 }
 
+.about-content-bio-spacer {
+  height: 100px;
+}
+
 /* Contact Us */
 
 #contact-content table {
