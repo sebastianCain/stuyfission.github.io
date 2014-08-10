@@ -105,11 +105,32 @@ a, a:visited {
   padding: 10px 50px 0px 5px;
 }
 
+#homepage-content-feed table {
+  width: 100%;
+}
+
+.homepage-content-feed-header {
+  background-color: #D4D4D4;
+  padding-left: 10px;
+
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 5px;
+  -moz-box-shadow:    5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  box-shadow:         5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.homepage-content-feed-text {
+  padding: 10px 10px 10px 0px;
+}
+
 #homepage-content-media {
   float: left;
   width: 20%;
   height: 100%;
   padding: 10px 5px;
+  margin-top: 15px;
 
   background-color: #AFAFAF;
   -webkit-border-radius: 10px;
