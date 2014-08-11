@@ -136,9 +136,24 @@ a, a:visited {
   -webkit-border-radius: 10px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
   -moz-border-radius: 10px;
-  -moz-box-shadow:    10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  box-shadow:         10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+#homepage-content-media img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  margin: auto;
+
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#homepage-content-media img:hover {
+  opacity: 1;
 }
 
 /* Pictures */
