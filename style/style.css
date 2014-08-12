@@ -186,7 +186,7 @@ a, a:visited {
   float: left;
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  margin: 0px 20px 10px 0px;
 }
 
 .first-content-table-header {
@@ -220,6 +220,20 @@ a, a:visited {
 
 .about-content-intro {
   padding: 50px 5px;
+}
+
+.about-content-intro img {
+  width: 150px;
+  height: auto;
+  opacity: 0.5;
+
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.about-content-intro img:hover {
+  opacity: 1;
 }
 
 .about-content-bio-header {
@@ -264,32 +278,6 @@ a, a:visited {
   padding: 50px 10px 100px 10px;
 }
 
-.contact-content-intro-email {
-  font-weight: bold;
-  color: #000000;
-
-  -webkit-transition: color 500ms;
-  -moz-transition: color 500ms;
-  transition: color 500ms;
+.contact-content-signup {
+  padding: 10px 10px;
 }
-
-.contact-content-intro-email:hover {
-  color: #808080;
-}
-
-/* Miscellaneous Styles */
-
-.github-link {
-  width: auto;
-  height: 100px;
-  opacity: 0.5;
-
-  -webkit-transition: opacity 750ms;
-  -moz-transition: opacity 750ms;
-  transition: opacity 750ms;
-}
-
-.github-link:hover {
-  opacity: 1;
-}
-
