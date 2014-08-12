@@ -18,53 +18,12 @@
       <div id='banner'></div>
 
       <div id='content-container'>
-        <div id='pictures-content'>
-          <table>
-            <tr>
-              <td></td>
-              <td class='large center'>
-                Pictures
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td id='pictures-td'>
-                <a href='maker-faire.html'>
-                  <div id='category-div' class='medium'>
-                  Maker Faire
-                  </div>
-                </a>
-              </td>
-              <td id='pictures-td'>
-                <a href='competition.html'>
-                  <div id='category-div' class='medium'>
-                  Competition
-                  <br>
-                  <img src='data/first_qualifier_2014.jpg'>
-                  </div>
-                </a>
-              </td>
-              <td id='pictures-td'>
-                <a href='robots.html'>
-                  <div id='category-div' class='medium'>
-                  Robots
-                  <br>
-                  <img src='data/wafflebot.jpg'>
-                  </div>
-                </a>
-              </td>
-            </tr>
-            <tr>
-                <td id='pictures-td'>
-                <a href='lab.html'>
-                  <div id='category-div' class='medium'>
-                  Working in the Lab
-                  <br>
-                  <img src='data/omnidrive_prototype.jpg'>
-                  </div>
-                </a>
-              </td>
-          </table>
+        <div class='large center'>
+          Pictures
+        </div>
+        <div id='pictures-content-image-thumbnails'>
+        </div>
+        <div id='pictures-content-image-display'>
         </div>
       </div>
     </div>
@@ -77,6 +36,7 @@
     </div>
 
     <script type='text/javascript' src='script/base.js'></script>
+    <script type='text/javascript' src='script/pictures.js'></script>
     <script type='text/javascript'>
       var navbar = document.getElementById('navbar');
       generateNavBar(navbar, 'pictures');

@@ -1,3 +1,10 @@
+"""
+  This file is not part of the website display. This file is used as an
+  executable to append new posts to the homepage.
+  Author: Alvin Lin (alvin.lin@stuypulse.com)
+  TODO: improve this stupid script
+"""
+
 import time;
 
 feedjs = open('feed.js', 'a');
