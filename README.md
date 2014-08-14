@@ -10,3 +10,4 @@ Convention:
   - Assume random people are reading this.
 - Always use single quotes unless nesting quotation marks.
 - There is an 80 character limit per line.
+- Commit messages must be consistent with the changes they contain.
