@@ -4,9 +4,13 @@
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
-function Gallery (thumbnailEl, displayEl) {
+function Gallery (objectName, thumbnailEl, displayEl) {
+  this.objectName_ = objectName;
   this.thumbnailParent_ = thumbnailEl;
   this.displayParent_ = displayEl;
+
+  this.thumbnailContainer_ = createDiv('gallery-thumbnails');
+  this.displayContainer_ = createDiv('gallery-display');
   this.pictures_ = [];
 };
 
@@ -20,22 +24,23 @@ Gallery.prototype.addPicture = function (url) {
 
 Gallery.prototype.build = function () {
   for (var i = 0; i < this.pictures_.length; i++) {
+    // Sets an onclick property for each thumbnail that will call
+    // the changeImage function
     this.pictures_[i].thumbnail.setAttribute(
-        'onclick', 'gallery.changeImage('+i.toString()+')');
-    this.thumbnailParent_.appendChild(this.pictures_[i].thumbnail);
+        'onclick', this.objectName_+'.changeImage('+i.toString()+')');
+    this.thumbnailContainer_.appendChild(this.pictures_[i].thumbnail);
 
     this.pictures_[i].displayPicture.setAttribute(
         'id', 'displayPicture'+i.toString());
     this.pictures_[i].displayPicture.style.display = 'none';
-
-    this.displayParent_ .appendChild(this.pictures_[i].displayPicture);
+    this.displayContainer_ .appendChild(this.pictures_[i].displayPicture);
   }
+  this.thumbnailParent_.appendChild(this.thumbnailContainer_);
+  this.displayParent_.appendChild(this.displayContainer_);
 };
 
 Gallery.prototype.changeImage = function (index) {
-	var numImages = document.getElementById('pictures-content-image-display').childNodes.length - 1;
-  console.log(numImages);
-	for (var i = 0; i < numImages; i++) {
+	for (var i = 0; i < this.pictures_.length; i++) {
     document.getElementById('displayPicture'+i.toString()).style.display = 'none';
 	}
   document.getElementById('displayPicture'+index.toString()).style.display = 'block';

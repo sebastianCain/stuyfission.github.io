@@ -43,17 +43,17 @@
 
       thumbnailEl = document.getElementById('pictures-content-image-thumbnails');
       pictureEl = document.getElementById('pictures-content-image-display');
-      var gallery = new Gallery(thumbnailEl, pictureEl);
-      gallery.addPicture('data/gallery/wafflebot.jpg');
-      gallery.addPicture('data/gallery/winbot.jpg');
-      gallery.addPicture('data/gallery/vectorbot.jpg');
-      gallery.addPicture('data/gallery/robot_cart.jpg');
-      gallery.addPicture('data/gallery/first_qualifier_2014.jpg');
-      gallery.addPicture('data/gallery/first_qualifier_robots_2014.jpg');
-      gallery.addPicture('data/gallery/mr_nibbles.jpg');
-      gallery.addPicture('data/gallery/omnidrive_prototype.jpg');
-      gallery.build();
-      gallery.changeImage(0);
+      var mainGallery = new Gallery('mainGallery', thumbnailEl, pictureEl);
+      mainGallery.addPicture('data/gallery/wafflebot.jpg');
+      mainGallery.addPicture('data/gallery/winbot.jpg');
+      mainGallery.addPicture('data/gallery/vectorbot.jpg');
+      mainGallery.addPicture('data/gallery/robot_cart.jpg');
+      mainGallery.addPicture('data/gallery/first_qualifier_2014.jpg');
+      mainGallery.addPicture('data/gallery/first_qualifier_robots_2014.jpg');
+      mainGallery.addPicture('data/gallery/mr_nibbles.jpg');
+      mainGallery.addPicture('data/gallery/omnidrive_prototype.jpg');
+      mainGallery.build();
+      mainGallery.changeImage(0);
     </script>
   </body>
 
