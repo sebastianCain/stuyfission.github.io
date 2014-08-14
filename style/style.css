@@ -213,7 +213,7 @@ a, a:visited {
 .gallery-display img {
   width: auto;
   max-width: 500px;
-  height: 100%;
+  height: auto;
   max-height: 500px;
   margin: auto;
 }
