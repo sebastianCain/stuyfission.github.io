@@ -22,31 +22,32 @@ Gallery.prototype.addPicture = function (url) {
 Gallery.prototype.build = function () {
   for (var i = 0; i < this.pictures_.length; i++) {
     this.pictures_[i].thumbnail.setAttribute(
-        'id', 'thumb'+i.toString());
-
+        'onclick', 'gallery.changeImage('+i.toString()+')');
     this.thumbnailParent_.appendChild(this.pictures_[i].thumbnail);
 
     this.pictures_[i].displayPicture.setAttribute(
         'id', 'displayPicture'+i.toString());
+    this.pictures_[i].displayPicture.style.display = 'none';
 
     this.displayParent_ .appendChild(this.pictures_[i].displayPicture);
-
   }
 };
 
-Gallery.prototype.changeImage = function (current) {
-	var numImages = document.getElementById('pictures-content-image-display').childNodes.length;
+Gallery.prototype.changeImage = function (index) {
+	var numImages = document.getElementById('pictures-content-image-display').childNodes.length - 1;
   console.log(numImages);
-	for (var i = 0; i <= numImages; i++) {
-		if (i == current) {
-			document.getElementById("normal" + current).style.display = "block";
-		} else {
-			document.getElementById("normal" + i).style.display = "none";
-		}
+	for (var i = 0; i < numImages; i++) {
+    document.getElementById('displayPicture'+i.toString()).style.display = 'none';
 	}
+  document.getElementById('displayPicture'+index.toString()).style.display = 'block';
+};
+
+Gallery.prototype.size = function() {
+  return this.pictures_.length;
 };
 
 var gallery = new Gallery();
 gallery.addPicture('data/wafflebot.jpg');
 gallery.addPicture('data/winbot.jpg');
 gallery.build();
+gallery.changeImage(0);
