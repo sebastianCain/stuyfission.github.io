@@ -203,6 +203,9 @@ a, a:visited {
   transition: opacity 500ms;
 }
 
+/*
+ * TODO: BUGGED
+ */
 .gallery-thumbnails img:hover {
   opacity: 1;
 }
