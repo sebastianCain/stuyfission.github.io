@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Stuy Fission 310</title>
+    <link rel="shortcut icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' >
+    <link rel='stylesheet' type='text/css' href='style/animation.css' />
+    <link rel='stylesheet' type='text/css' href='style/navbar.css' />
+    <link rel='stylesheet' type='text/css' href='style/style.css' />
+    <script type='text/javascript' src='script/dom_creator.js'></script>
+  </head>
+
+  <body>
+    <div id='container'>
+      <div id='banner'></div>
+
+      <div id='content-container'>
+      <table>
+        <tr>
+          <td>
+            <a href='pictures.html'>Click to Go Back</a>
+          </td>
+          <td class='large center'>
+            Robots
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id='pictures-td'>
+            <div id='pictures-div' class='medium'>
+            Winbot
+            <br>
+            <img src='data/winbot.jpg'>
+            </div>
+          </td>
+          <td id='pictures-td'>
+            <div id='pictures-div' class='medium'>
+            Vectorbot
+            <br>
+            <img src='data/vectorbot.jpg'>
+            </div>
+          </td>
+          <td id='pictures-td'>
+            <div id='pictures-div' class='medium'>
+            Wafflebot
+            <br>
+            <img src='data/wafflebot.jpg'>
+            </div>
+          </td>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+    <div id='navbar-hover-area'>
+      <div id='navbar'></div>
+    </div>
+
+    <div id='footer'>
+    </div>
+
+    <script type='text/javascript' src='script/base.js'></script>
+    <script type='text/javascript'>
+      var navbar = document.getElementById('navbar');
+      generateNavBar(navbar, 'pictures');
+    </script>
+  </body>
+
+</html>
