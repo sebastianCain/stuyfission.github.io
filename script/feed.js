@@ -25,5 +25,3 @@ function appendToFeed(header, text) {
 }
 
 appendToFeed('Introducing our New Website', 'FTC is not just about building and programming a robot, and it\'s not just about standing in a lab and working really late on the night before competition. It\'s also about spreading the joy and excitement of STEM to the community around us. With this website, we hope to show why we love robotics to everyone in any community, in the hope that we inspire kids of all ages to go out and make something.');
-
-appendToFeed('Introducing our New Website', 'FTC is not just about building and programming a robot, and it\'s not just about standing in a lab and working really late on the night before competition. It\'s also about spreading the joy and excitement of STEM to community around us. With this website, we hope to show why we love robotics to everyone in any community, in the hope that we inspire kids of all ages to go out and make something.');
