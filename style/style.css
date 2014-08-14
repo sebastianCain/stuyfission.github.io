@@ -176,9 +176,9 @@ a, a:visited {
 #pictures-content-image-display {
   width: 100%;
   min-width: 600px;
-  height: 500px;
+  height: 600px;
   margin: 25px auto;
-  padding: 100px;
+  padding: 50px;
   background-color: #D4D4D4;
 
   -webkit-border-radius: 5px;
@@ -209,7 +209,9 @@ a, a:visited {
 
 .gallery-display img {
   width: auto;
-  height: 300px;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
   margin: auto;
 }
 
