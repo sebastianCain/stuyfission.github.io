@@ -10,7 +10,7 @@
   */
 function generateBanner(parent) {
   var imgDiv = createDiv('banner-img');
-  var img = createImg('data/logo/logo.jpg', 100, 100);
+  var img = createImg('data/logos/logo.jpg', 100, 100);
   imgDiv.appendChild(img);
 
   var textDiv = createDiv('banner-text');
