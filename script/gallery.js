@@ -4,10 +4,9 @@
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
-function Gallery () {
-  this.thumbnailParent_ = document.getElementById('pictures-content-image-thumbnails');
-  this.displayParent_ = document.getElementById('pictures-content-image-display');
-
+function Gallery (thumbnailEl, displayEl) {
+  this.thumbnailParent_ = thumbnailEl;
+  this.displayParent_ = displayEl;
   this.pictures_ = [];
 };
 
@@ -45,9 +44,3 @@ Gallery.prototype.changeImage = function (index) {
 Gallery.prototype.size = function() {
   return this.pictures_.length;
 };
-
-var gallery = new Gallery();
-gallery.addPicture('data/wafflebot.jpg');
-gallery.addPicture('data/winbot.jpg');
-gallery.build();
-gallery.changeImage(0);

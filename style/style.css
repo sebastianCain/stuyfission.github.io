@@ -177,15 +177,10 @@ a, a:visited {
   width: auto;
   height: 145px;
   margin: 0px 5px;
-  opacity: 0.5;
 
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   transition: opacity 500ms;
-}
-
-#pictures-content-image-thumbnails img:hover {
-  opacity: 1;
 }
 
 #pictures-content-image-display {

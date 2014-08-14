@@ -36,10 +36,24 @@
     </div>
 
     <script type='text/javascript' src='script/base.js'></script>
-    <script type='text/javascript' src='script/pictures.js'></script>
+    <script type='text/javascript' src='script/gallery.js'></script>
     <script type='text/javascript'>
       var navbar = document.getElementById('navbar');
       generateNavBar(navbar, 'pictures');
+
+      thumbnailEl = document.getElementById('pictures-content-image-thumbnails');
+      pictureEl = document.getElementById('pictures-content-image-display');
+      var gallery = new Gallery(thumbnailEl, pictureEl);
+      gallery.addPicture('data/wafflebot.jpg');
+      gallery.addPicture('data/winbot.jpg');
+      gallery.addPicture('data/vectorbot.jpg');
+      gallery.addPicture('data/robot_cart.jpg');
+      gallery.addPicture('data/first_qualifier_2014.jpg');
+      gallery.addPicture('data/first_qualifier_robots_2014.jpg');
+      gallery.addPicture('data/mr_nibbles.jpg');
+      gallery.addPicture('data/omnidrive_prototype.jpg');
+      gallery.build();
+      gallery.changeImage(0);
     </script>
   </body>
 
