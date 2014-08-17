@@ -34,7 +34,7 @@ Gallery.prototype.addPicture = function(url, caption) {
 /**
  * Builds the gallery and appends it to the parent element.
  */
-Gallery.prototype.build = function () {
+Gallery.prototype.build = function() {
   var thumbnailContainer = createDiv('gallery-thumbnails');
   var displayContainer = createDiv('gallery-display');
   for (var i = 0; i < this.pictures_.length; i++) {
@@ -57,13 +57,16 @@ Gallery.prototype.build = function () {
 /**
  * @private
  */
-Gallery.prototype.changeImage = function (index) {
+Gallery.prototype.changeImage = function(index) {
 	for (var i = 0; i < this.pictures_.length; i++) {
     this.pictures_[i].displayPicture.style.display = 'none';
 	}
   this.pictures_[index].displayPicture.style.display = 'block';
 };
 
-Gallery.prototype.size = function() {
-  return this.pictures_.length;
+/**
+ * Returns a random index of an image in the pictures array.
+ */
+Gallery.prototype.randIndex = function() {
+  return Math.floor((Math.random() * 100)) % this.pictures_.length;
 };

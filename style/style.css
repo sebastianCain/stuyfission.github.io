@@ -162,7 +162,14 @@ a, a:visited {
   width: 100%;
   min-width: 800px;
   height: 600px;
-  background: #ABCDEF;
+  background: #A4A4A4;
+
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Gallery */
@@ -179,11 +186,8 @@ a, a:visited {
   background-color: #D4D4D4;
 
   -webkit-border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
   -moz-border-radius: 5px;
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 .gallery-thumbnails img {
@@ -212,11 +216,8 @@ a, a:visited {
   background-color: #D4D4D4;
 
   -webkit-border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
   -moz-border-radius: 5px;
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 .gallery-display img {
