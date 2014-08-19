@@ -88,22 +88,13 @@
       var navbar = document.getElementById('navbar');
       generateNavBar(navbar, 'home');
 
+      var kickoffDate = 'September 6, 2014 12:00:00';
       var countdownDiv = document.getElementById('homepage-countdown-timer');
-      var target_date = new Date('September 6, 2014 12:00:00').getTime();
-      var d, h, m, s;
+      countdownDiv.innerHTML = getDateStringUntil(kickoffDate);
+
       setInterval(function() {
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
-        d = parseInt(seconds_left / 86400);
-        seconds_left %= 86400;
-        h = parseInt(seconds_left / 3600);
-        seconds_left %= 3600;
-        m = parseInt(seconds_left / 60);
-        s = parseInt(seconds_left % 60);
-
-        countdownDiv.innerHTML = d + ' days, ' + h + ' hours, ' + m + ' minutes, and ' + s + ' seconds until FTC Kickoff (Sept 6, 2014)';
+        countdownDiv.innerHTML = getDateStringUntil(kickoffDate);
       }, 1000);
-
     </script>
   </body>
 
