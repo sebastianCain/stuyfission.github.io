@@ -18,6 +18,10 @@
       <div id='banner'></div>
 
       <div id='content-container'>
+
+        <div id='homepage-countdown-timer' class='medium'>
+        </div>
+
         <div id='homepage-content-feed'>
           <table id='homepage-content-feed-table'>
           <!-- Content appended via JS -->
@@ -28,6 +32,11 @@
             <tr>
               <td class='medium center'>
                 Find us on:
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr />
               </td>
             </tr>
             <tr>
@@ -51,6 +60,16 @@
                 </a>
               </td>
             </tr>
+            <tr>
+              <td class='medium center'>
+                Upcoming events:
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr />
+              </td>
+            </tr>
           </table>
         </div>
       </div>
@@ -68,6 +87,23 @@
     <script type='text/javascript'>
       var navbar = document.getElementById('navbar');
       generateNavBar(navbar, 'home');
+
+      var countdownDiv = document.getElementById('homepage-countdown-timer');
+      var target_date = new Date('September 6, 2014 12:00:00').getTime();
+      var d, h, m, s;
+      setInterval(function() {
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+        d = parseInt(seconds_left / 86400);
+        seconds_left %= 86400;
+        h = parseInt(seconds_left / 3600);
+        seconds_left %= 3600;
+        m = parseInt(seconds_left / 60);
+        s = parseInt(seconds_left % 60);
+
+        countdownDiv.innerHTML = d + ' days, ' + h + ' hours, ' + m + ' minutes, and ' + s + ' seconds until FTC Kickoff (Sept 6, 2014)';
+      }, 1000);
+
     </script>
   </body>
 

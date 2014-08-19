@@ -112,6 +112,21 @@ a, a:visited {
 
 /* Homepage */
 
+#homepage-countdown-timer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #D4D4D4;
+
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 #homepage-content-feed {
   float: left;
   width: 80%;
