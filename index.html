@@ -68,6 +68,10 @@
             <tr>
               <td>
                 <hr />
+                September 6th, 2014
+                <br>
+                First Live FTC Kickoff at NYU Polytech
+                <hr />
               </td>
             </tr>
           </table>
@@ -90,10 +94,10 @@
 
       var kickoffDate = 'September 6, 2014 12:00:00';
       var countdownDiv = document.getElementById('homepage-countdown-timer');
-      countdownDiv.innerHTML = getDateStringUntil(kickoffDate);
+      countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
 
       setInterval(function() {
-        countdownDiv.innerHTML = getDateStringUntil(kickoffDate);
+        countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
       }, 1000);
     </script>
   </body>
