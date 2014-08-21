@@ -18,6 +18,10 @@
       <div id='banner'></div>
 
       <div id='content-container'>
+
+        <div id='homepage-countdown-timer' class='medium'>
+        </div>
+
         <div id='homepage-content-feed'>
           <table id='homepage-content-feed-table'>
           <!-- Content appended via JS -->
@@ -28,6 +32,11 @@
             <tr>
               <td class='medium center'>
                 Find us on:
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr />
               </td>
             </tr>
             <tr>
@@ -51,6 +60,20 @@
                 </a>
               </td>
             </tr>
+            <tr>
+              <td class='medium center'>
+                Upcoming events:
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td class='homepage-content-media-events'>
+                September 6th, 2014:
+                <br>
+                First Live FTC Kickoff at NYU Polytech
+                <hr />
+              </td>
+            </tr>
           </table>
         </div>
       </div>
@@ -68,6 +91,14 @@
     <script type='text/javascript'>
       var navbar = document.getElementById('navbar');
       generateNavBar(navbar, 'home');
+
+      var kickoffDate = 'September 6, 2014 12:00:00';
+      var countdownDiv = document.getElementById('homepage-countdown-timer');
+      countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
+
+      setInterval(function() {
+        countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
+      }, 1000);
     </script>
   </body>
 
