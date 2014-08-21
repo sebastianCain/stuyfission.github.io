@@ -186,6 +186,11 @@ a, a:visited {
   opacity: 1;
 }
 
+.homepage-content-media-events {
+  text-align: center;
+  font-size: 13pt;
+}
+
 /* Pictures */
 
 #pictures-content-main-gallery {
