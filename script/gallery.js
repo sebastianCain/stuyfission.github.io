@@ -7,7 +7,7 @@
 /**
  * @constructor
  * @param {Element} parentEl
- * @param {string} objectName
+ * @param {string} objectName The name of Gallery object that was instantiated.
  */
 function Gallery(parentEl, objectName) {
 

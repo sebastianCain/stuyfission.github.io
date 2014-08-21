@@ -216,13 +216,6 @@ a, a:visited {
   transition: opacity 500ms;
 }
 
-/*
- * BUGGED
- */
-.gallery-thumbnails img:hover {
-  opacity: 1;
-}
-
 .gallery-display {
   float: left;
   width: calc(100% - 260px);
@@ -237,10 +230,11 @@ a, a:visited {
 
 .gallery-display img {
   width: auto;
-  max-width: 500px;
   height: 520px;
   margin: 20px auto;
 }
+
+
 
 /* FIRST */
 
