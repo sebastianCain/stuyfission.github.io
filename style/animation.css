@@ -133,7 +133,6 @@
   100% {
     opacity: 1;
     left: 0px;
-    right: calc(100% - 100px);
     height: 100px;
   }
 }
@@ -207,29 +206,24 @@
 
 #container {
   opacity: 0;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: auto;
 
   -webkit-animation-name: container;
   -webkit-animation-duration: 2000ms;
-  -webkit-animation-delay: 1000ms;
+  -webkit-animation-delay: 3000ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
   -moz-animation-name: container;
   -moz-animation-duration: 2000ms;
-  -moz-animation-delay: 1000ms;
+  -moz-animation-delay: 3000ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
   animation-name: container;
   animation-duration: 2000ms;
-  animation-delay: 1000ms;
+  animation-delay: 3000ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
