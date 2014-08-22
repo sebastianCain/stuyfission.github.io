@@ -4,102 +4,33 @@
 
   <head>
     <title>Stuy Fission 310</title>
-    <link rel="shortcut icon" href="data/logos/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="data/logos/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' >
-    <link rel='stylesheet' type='text/css' href='style/animation.css' />
-    <link rel='stylesheet' type='text/css' href='style/navbar.css' />
+    <link rel="shortcut icon" href="data/logos/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="data/logos/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' />
     <link rel='stylesheet' type='text/css' href='style/style.css' />
-    <script type='text/javascript' src='script/dom_creator.js'></script>
+    <link rel='stylesheet' type='text/css' href='style/animation.css' />
   </head>
 
   <body>
-    <div id='container'>
-      <div id='banner'></div>
-
-      <div id='content-container'>
-
-        <div id='homepage-countdown-timer' class='medium'>
-        </div>
-
-        <div id='homepage-content-feed'>
-          <table id='homepage-content-feed-table'>
-          <!-- Content appended via JS -->
-          </table>
-        </div>
-        <div id='homepage-content-media'>
-          <table>
-            <tr>
-              <td class='medium center'>
-                Find us on:
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <hr />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href='http://github.com/stuyfission' target="_blank">
-                  <img src='data/logos/github_logo.png' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href='http://facebook.com/stuyfission' target="_blank">
-                  <img src='data/logos/facebook_logo.png' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href='http://youtube.com/stuyfission' target="_blank">
-                  <img src='data/logos/youtube_logo.png' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class='medium center'>
-                Upcoming events:
-                <hr />
-              </td>
-            </tr>
-            <tr>
-              <td class='homepage-content-media-events'>
-                September 6th, 2014:
-                <br>
-                First Live FTC Kickoff at NYU Polytech
-                <hr />
-              </td>
-            </tr>
-          </table>
-        </div>
+    <div id='banner'>
+      <img src='data/logos/logo.jpg' class='banner-img' />
+      <div class='banner-name'>
+        Stuy Fission 310
       </div>
     </div>
-
-    <div id='navbar-hover-area'>
-      <div id='navbar'></div>
+    <div id='container'>
+      <div class='landing-media'>
+        <a href='http://www.github.com/stuyfission'>
+          <img src='data/logos/github_logo.png' />
+        </a>
+        <a href='http://www.facebook.com/'>
+          <img src='data/logos/facebook_logo.png' />
+        </a>
+        <a href='http://www.youtube.com/stuyfission'>
+          <img src='data/logos/youtube_logo.png' />
+        </a>
+      </div>
     </div>
-
-    <div id='footer'>
-    </div>
-
-    <script type='text/javascript' src='script/base.js'></script>
-    <script type='text/javascript' src='script/feed.js'></script>
-    <script type='text/javascript'>
-      var navbar = document.getElementById('navbar');
-      generateNavBar(navbar, 'home');
-
-      var kickoffDate = 'September 6, 2014 12:00:00';
-      var countdownDiv = document.getElementById('homepage-countdown-timer');
-      countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
-
-      setInterval(function() {
-        countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
-      }, 1000);
-    </script>
   </body>
 
 </html>

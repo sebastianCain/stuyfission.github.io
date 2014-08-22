@@ -4,157 +4,258 @@
  */
 
 #banner {
-  top: -150px;
+  height: 100%;
 
   -webkit-animation-name: banner;
-  -webkit-animation-duration: 500ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-delay: 2000ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
   -moz-animation-name: banner;
-  -moz-animation-duration: 500ms;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-delay: 2000ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
   animation-name: banner;
-  animation-duration: 500ms;
+  animation-duration: 1000ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 @-webkit-keyframes banner {
   0% {
-    top: -150px;
+    height: 100%;
   }
   100% {
-    top: 0px;
+    height: 100px;
   }
 }
 @-moz-keyframes banner {
   0% {
-    top: -150px;
+    height: 100%;
   }
   100% {
-    top: 0px;
+    height: 100px;
   }
 }
 @keyframes banner {
   0% {
-    top: -150px;
+    height: 100%;
   }
   100% {
-    top: 0px;
+    height: 100px;
   }
 }
 
-#content-container {
+.banner-img {
   opacity: 0;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
 
-  -webkit-animation-name: content-container;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-delay: 500ms;
+  -webkit-animation-name: banner-img;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-delay: 1000ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
-  -moz-animation-name: content-container;
-  -moz-animation-duration: 500ms;
-  -moz-animation-delay: 500ms;
+  -moz-animation-name: banner-img;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-delay: 1000ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
-  animation-name: content-container;
-  animation-duration: 500ms;
-  animation-delay: 500ms;
+  animation-name: banner-img;
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
-@-webkit-keyframes content-container {
+@-webkit-keyframes banner-img {
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
   100% {
     opacity: 1;
+    left: 0px;
+    right: calc(100% - 100px);
+    height: 100px;
   }
 }
-@-moz-keyframes content-container {
+@-moz-keyframes banner-img {
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
   100% {
     opacity: 1;
+    right: calc(100% - 100px);
+    height: 100px;
   }
 }
-@keyframes content-container {
+@keyframes banner-img {
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
   100% {
     opacity: 1;
+    left: 0px;
+    right: calc(100% - 100px);
+    height: 100px;
   }
 }
 
-#navbar {
-  left: -142px;
+.banner-name {
+  opacity: 0;
 
-  -webkit-animation-name: navbar;
-  -webkit-animation-duration: 1500ms;
+  -webkit-animation-name: banner-name;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-delay: 3000ms;
+  -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
-  -moz-animation-name: navbar;
-  -moz-animation-duration: 1500ms;
+  -moz-animation-name: banner-name;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-delay: 3000ms;
+  -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
-  animation-name: navbar;
-  animation-duration: 1500ms;
+  animation-name: banner-name;
+  animation-duration: 2000ms;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
-@-webkit-keyframes navbar {
+@-webkit-keyframes banner-name {
   0% {
-    left: -142px;
-  }
-  25% {
-    left: 0px;
-  }
-  75% {
-    left: 0px;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
   100% {
-    left: -142px;
+    opacity: 1;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
 }
-@-moz-keyframes navbar {
+@-moz-keyframes banner-img {
   0% {
-    left: -142px;
-  }
-  25% {
-    left: 0px;
-  }
-  75% {
-    left: 0px;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
   100% {
-    left: -142px;
+    opacity: 1;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
 }
-@keyframes navbar {
+@keyframes banner-img {
   0% {
-    left: -142px;
-  }
-  25% {
-    left: 0px;
-  }
-  75% {
-    left: 0px;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
   100% {
-    left: -142px;
+    opacity: 1;
+    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
   }
 }
+
+#container {
+  opacity: 0;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+
+  -webkit-animation-name: container;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-name: container;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-delay: 1000ms;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+
+  animation-name: container;
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
