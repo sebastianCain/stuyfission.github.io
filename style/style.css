@@ -4,8 +4,9 @@
  */
 
 /* Global Styles and Class */
-/* Removes the need to extra math to account for border width and padding
- * when calculating the width/height of an element
+
+/* Removes the need to extra math to account for border width and
+ * padding when calculating the width/height of an element.
  */
 * {
   -webkit-box-sizing: border-box;
@@ -47,7 +48,7 @@ html, body {
 }
 
 #banner {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   min-width: 1080px;
@@ -110,6 +111,21 @@ html, body {
 
 .ftc {
   height: 500px;
+}
+
+.ftc-logo {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+.ftc-text {
+  border: 10px;
+  padding: 10px;
+  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .team {
