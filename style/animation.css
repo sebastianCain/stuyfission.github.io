@@ -114,6 +114,7 @@
   }
   100% {
     opacity: 1;
+    left: 0px;
     right: calc(100% - 100px);
     height: 100px;
   }
@@ -133,6 +134,7 @@
   100% {
     opacity: 1;
     left: 0px;
+    right: calc(100% - 100px);
     height: 100px;
   }
 }
