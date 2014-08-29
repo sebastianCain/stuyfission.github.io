@@ -142,6 +142,8 @@ html, body {
 
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
@@ -176,6 +178,8 @@ html, body {
 
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
