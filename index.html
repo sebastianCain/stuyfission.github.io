@@ -47,33 +47,33 @@
         <span class='large center'>
           Meet The Team
         </span>
-        <ul class='medium center team-tabs'>
+        <ul id='team-tabs' class='medium'>
           <li>
-            <a href='#james'>
+            <a onclick='setSelected("james")' id='team-tabs-james' class='unselected'>
               James Chin
             </a>
           </li>
           <li>
-            <a href='#alvin'>
+            <a onclick='setSelected("alvin")' id='team-tabs-alvin' class='unselected'>
               Alvin Lin
             </a>
           </li>
           <li>
-            <a href='#kevin'>
+            <a onclick='setSelected("kevin")' id='team-tabs-kevin' class='unselected'>
               Kevin Yan
             </a>
           </li>
           <div id='team-tabs-content'>
-            <div id='team-tabs-default'>
+            <div id='team-tabs-content-default' class='visible'>
               Click on a tab for biography.
             </div>
-            <div id='team-tabs-james' class='hidden'>
+            <div id='team-tabs-content-james' class='hidden'>
               James
             </div>
-            <div id='team-tabs-alvin' class='hidden'>
+            <div id='team-tabs-content-alvin' class='hidden'>
               Elfin
             </div>
-            <div id='team-tabs-kevin' class='hidden'>
+            <div id='team-tabs-content-kevin' class='hidden'>
               Kevin
             </div>
           </div>
@@ -106,6 +106,7 @@
         </table>
       </div>
     </div>
+    <script type='text/javascript' src='script/bio-tabs.js'></script>
   </body>
 
 </html>

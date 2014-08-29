@@ -94,8 +94,8 @@ html, body {
 }
 
 .ftc-logo {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   float: left;
   margin-right: 10px;
 }
@@ -112,9 +112,10 @@ html, body {
   height: 1000px;
   color: #000000;
   background: url("../data/gallery/vectorbot.jpg");
+  background-size: 100% 1000px;
 }
 
-.team-tabs {
+#team-tabs {
   position: relative;
   width: 80%;
   min-width: 800px;
@@ -123,24 +124,23 @@ html, body {
   padding: 20px;
   background: rgba(196, 196, 196, 0.8);
 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
-.team-tabs li {
+#team-tabs li {
   display: inline;
   height: 200px;
-  margin: 20px;
+  margin: 5px;
 }
 
-.team-tabs li a {
+#team-tabs li a {
   height: 200px;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 10px;
   color: #000000;
   text-decoration: none;
-  background: rgba(105, 105, 105, 0.6);
 
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -156,35 +156,46 @@ html, body {
   transition: all 200ms;
 }
 
-.team-tabs li a:hover {
+#team-tabs li a:hover {
+  background: rgba(39, 39, 39, 0.6);
+
+  cursor: -webkit-pointer;
+  cursor: -moz-pointer;
+  cursor: -ms-pointer;
+  cursor: -o-pointer;
+  cursor: pointer;
+}
+
+#team-tabs li .selected {
   background: rgba(39, 39, 39, 0.6);
 }
 
-.team-tabs li a .selected {
-  background: #aaa;
+#team-tabs li .unselected {
+  background: rgba(105, 105, 105, 0.6);
 }
 
 #team-tabs-content {
-  height: 100px;
-  margin-bottom: 10px;
-  background: rgba(105, 105, 105, 0.6);
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  height: 200px;
 }
 
 #team-tabs-content div {
   position: absolute;
   /* 100% of the the container minus 40px padding */
   width: calc(100% - 40px);
-  height: 50px;
+  height: 200px;
+
+  background: rgba(105, 105, 105, 0.6);
   margin: auto;
-  padding: 20px;
+  padding: 50px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 #team-tabs-content .visible {
   display: block;
+  background: rgba(105, 105, 105, 0.6);
 }
 
 #team-tabs-content .hidden {
