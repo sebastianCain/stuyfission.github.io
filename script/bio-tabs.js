@@ -1,4 +1,9 @@
 /**
+ * @author Alvin Lin (alvin.lin@stuypulse.com)
+ */
+
+
+/**
  * @param {string} selectedSection
  */
 function setSelected(selectedTab) {
