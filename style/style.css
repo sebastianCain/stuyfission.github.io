@@ -120,7 +120,14 @@ html, body {
   list-style-type: none;
   margin: 30px auto;
   padding: 10px;
-  background: rgba(204, 204, 204, 0.75);
+  background: rgba(204, 204, 204, 0.80);
+
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .team-tabs li {
@@ -143,6 +150,8 @@ html, body {
 
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
