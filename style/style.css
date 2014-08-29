@@ -19,6 +19,7 @@
 }
 
 .content {
+  display: block;
   width: 100%;
   min-width: 1080px;
   padding: 100px 0px;
@@ -109,55 +110,21 @@ html, body {
 
 .team {
   height: 1000px;
-  background-image: url('data/gallery/wafflebot.jpg');
+  color: #000000;
+  background: url("../data/gallery/vectorbot.jpg");
 }
 
-.team table {
+.team-tabs {
   width: 80%;
   min-width: 800px;
-  margin: auto;
-}
-
-.team-bio-picture {
-  width: 100px;
+  list-style-type: none;
+  margin: 30px auto;
   padding: 10px;
-  background-color: #c6c6c6;
-
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  background: rgba(204, 204, 204, 0.75);
 }
 
-.team-bio-picture:active {
-  background-color: #ec2802;
-}
-
-.team-bio-picture img {
-  width: 100px;
-  height: auto;
-  opacity: 0.75;
-
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-.team-bio-picture img:hover {
-  opacity: 1;
-}
-
-#team-bio-text {
-  background-color: #c6c6c6;
-
-  -webkit-border-top-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-bottomright: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.team-tabs li {
+  display: inline;
 }
 
 .media {
