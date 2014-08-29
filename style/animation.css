@@ -164,43 +164,43 @@
 @-webkit-keyframes banner-name {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 @-moz-keyframes banner-img {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 @keyframes banner-img {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #3b3737, #000000);
-    background-image: linear-gradient(to right, #000000, #3b3737, #000000);
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 
