@@ -118,10 +118,10 @@ html, body {
   width: 80%;
   min-width: 800px;
   list-style-type: none;
-  margin: 30px auto;
   padding: 10px;
   background: rgba(204, 204, 204, 0.80);
 
+  margin: 30px auto;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -moz-border-radius-topleft: 10px;
