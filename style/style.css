@@ -118,16 +118,16 @@ html, body {
 }
 
 .team {
-  height: 1000px;
+  height: auto;
   background: url("../data/gallery/vectorbot.jpg");
-  background-size: 100% 1000px;
+  background-size: 100% auto;
 }
 
-#team-tabs {
+#team-content {
   position: relative;
   width: 80%;
   min-width: 800px;
-  list-style-type: none;
+  height: auto;
   margin: auto;
   padding: 20px;
   background: rgba(196, 196, 196, 0.8);
@@ -140,15 +140,18 @@ html, body {
   box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-#team-tabs li {
-  position: relative;
+#team-content-tabs {
+  list-style-type: none;
+}
+
+#team-content-tabs li {
   display: inline;
   height: 200px;
   width: 25%;
-  margin: 5px;
+  margin: 0px 5px;
 }
 
-#team-tabs li a {
+#team-content-tabs li a {
   height: 200px;
   width: 100%;
   padding: 0px 10px;
@@ -169,7 +172,7 @@ html, body {
   transition: all 200ms;
 }
 
-#team-tabs li a:hover {
+#team-content-tabs li a:hover {
   background: rgba(39, 39, 39, 0.6);
 
   cursor: -webkit-pointer;
@@ -179,27 +182,27 @@ html, body {
   cursor: pointer;
 }
 
-#team-tabs li .selected {
+#team-content-tabs li .selected {
   background: rgba(39, 39, 39, 0.6);
   color: #bebebe;
 }
 
-#team-tabs li .unselected {
+#team-content-tabs li .unselected {
   background: rgba(105, 105, 105, 0.6);
 }
 
-#team-tabs-content {
+#team-content-text {
   height: auto;
 }
 
-#team-tabs-content div {
+#team-content-text div {
   /* 100% of the the container minus 40px padding */
   width: calc(100% - 40px);
   height: auto;
   min-height: 350px;
 
   background: rgba(105, 105, 105, 0.6);
-  margin: auto;
+  margin: 0px auto;
   padding: 60px;
 
   -webkit-border-radius: 10px;
@@ -207,7 +210,7 @@ html, body {
   border-radius: 10px;
 }
 
-#team-tabs-content div img {
+#team-content-text div img {
   float: left;
   width: 150px;
   height: 200px;
@@ -218,7 +221,7 @@ html, body {
   border-radius: 10px;
 }
 
-#team-tabs-content .visible {
+#team-content-text .visible {
   display: block;
   height: auto;
   text-align: left;
@@ -228,7 +231,7 @@ html, body {
   color: #d8d8d8;
 }
 
-#team-tabs-content .hidden {
+#team-content-text .hidden {
   display: none;
 }
 
