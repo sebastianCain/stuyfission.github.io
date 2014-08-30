@@ -110,7 +110,7 @@ html, body {
 
 #ftc-kickoff-countdown-timer {
   padding: 5px;
-  background: rgba(196, 196, 196, 1);
+  background: #ccc;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
