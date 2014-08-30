@@ -22,5 +22,5 @@ function setSelected(selectedTab) {
     sections[i].setAttribute('class', 'hidden');
   }
   var selectedSectionEl = document.getElementById('team-tabs-content-'+selectedTab);
-  selectedSectionEl.setAttribute('class', 'visible');
+  selectedSectionEl.setAttribute('class', 'small visible');
 };
