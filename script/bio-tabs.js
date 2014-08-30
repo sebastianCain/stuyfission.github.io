@@ -7,7 +7,6 @@
  * @param {string} selectedSection
  */
 function setSelected(selectedTab) {
-  "use strict";
   var tabs = document.getElementById('team-tabs')
              .getElementsByTagName('a');
   for (var i = 0; i < tabs.length; i++) {
