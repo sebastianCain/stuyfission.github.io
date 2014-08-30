@@ -187,17 +187,16 @@ html, body {
 }
 
 #team-tabs-content {
-  height: 450px;
+  height: auto;
 }
 
 #team-tabs-content div {
-  position: absolute;
   /* 100% of the the container minus 40px padding */
   width: calc(100% - 40px);
 
   background: rgba(105, 105, 105, 0.6);
   margin: auto;
-  padding: 50px;
+  padding: 60px;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -208,7 +207,7 @@ html, body {
   float: left;
   width: 150px;
   height: 200px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
