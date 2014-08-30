@@ -55,54 +55,41 @@
         </table>
       </div>
       <div class='content team'>
-        <ul id='team-tabs' class='medium'>
-          <div class='large center'>
-            Meet The Team
-          </div>
-          <li>
-            <a onclick='setSelected("james-chin")' id='team-tabs-james-chin' class='unselected'>
-              James Chin
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("alvin-lin")' id='team-tabs-alvin-lin' class='unselected'>
-              Alvin Lin
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("kevin-yan")' id='team-tabs-kevin-yan' class='unselected'>
-              Kevin Yan
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("andrew-xu")' id='team-tabs-andrew-xu' class='unselected'>
-              Andrew Xu
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("jason-chua")' id='team-tabs-jason-chua' class='unselected'>
-              Jason Chua
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("thomas-ly")' id='team-tabs-thomas-ly' class='unselected'>
-              Thomas Ly
-            </a>
-          </li>
-          <li>
-            <a onclick='setSelected("kenneth-li")' id='team-tabs-kenneth-li' class='unselected'>
-              Kenneth Li
-            </a>
-          </li>
-          <div id='team-tabs-content'>
-            <div id='team-tabs-content-default'>
+        <div class='team-content'>
+          <ul id='team-content-tabs' class='medium'>
+            <div class='large center'>
+              Meet The Team
+            </div>
+            <li>
+              <a onclick='setSelected("engineers")' id='team-tabs-engineers' class='unselected'>
+                Engineers
+              </a>
+            </li>
+            <li>
+              <a onclick='setSelected("programmers")' id='team-tabs-programmers' class='unselected'>
+                Programmers
+              </a>
+            </li>
+            <li>
+              <a onclick='setSelected("marketers")' id='team-tabs-marketers' class='unselected'>
+                Marketers
+              </a>
+            </li>
+            <li>
+              <a onclick='setSelected("mentors")' id='team-tabs-mentors' class='unselected'>
+                Mentors
+              </a>
+            </li>
+          </ul>
+          <div id='team-content-text'>
+            <div>
               <span class='medium center'>
-                Click on a tab for their biography.
+                Click on a tab to meet the team members in that section.
               </span>
             </div>
-            <div id='team-tabs-content-james-chin' class='hidden'>
+            <div id='team-tabs-content-engineers' class='hidden'>
               <span class='medium center'>
-                President
+                Head of Engineering
               </span>
               <hr />
               <img src='data/team/james_chin.jpg' />
@@ -124,48 +111,8 @@
               of arts and crafts, so I want to give others the opportunities
               that I wish I had. My other interests include piano, tennis, and
               programming.
-            </div>
-            <div id='team-tabs-content-alvin-lin' class='hidden'>
-              <span class='medium center'>
-                Vice President
-              </span>
-              <hr />
-              <img src='data/team/alvin_lin.jpg' />
-              &nbsp; &nbsp; &nbsp; &nbsp;
-              I joined robotics because of an interest in computer programming
-              as a career and I wanted to challenge myself with the difficulties
-              that robotics would present. From a young age, I've been extremely
-              interested in the workings of computers and I enjoy tinkering with
-              code in my free time. I enjoy the logical challenges presented by
-              code and the engineering challenges presented by robotics. I have
-              experience with object oriented coding languages and web design
-              and I have interned at an education company as a programmer. My
-              other hobbies aside from robotics include playing basketball,
-              League of Legends, piano, and guitar. As head of programming for
-              Stuy Fission 310, I am tasked with website design and maintenance
-              as well as robot programming and delegating programmers to do the
-              same.
-            </div>
-            <div id='team-tabs-content-kevin-yan' class='hidden'>
-              <span class='medium center'>
-                Head of Marketing
-              </span>
-              <hr />
-              <img src='data/team/kevin_yan.jpg' />
-              &nbsp; &nbsp; &nbsp; &nbsp;
-              The first time I got involved with robotics was when I went to a
-              robotics camp at Johns Hopkins’ Center for Talented Youth with
-              Alvin. I fell in love with robotics and as soon as I returned home
-              from the camp, I bought my own Lego Mindstorms kit. In middle
-              school, Alvin and I joined the robotics team and ended up leading
-              the team. I also started to make my own money by selling, bracelets,
-              and rubik’s cubes to my classmates. Through that experience, I
-              learned to earn and manage my money. I hope to study at Harvard
-              business school. My combined experience in robotics and with money
-              led me to doing marketing for 310 Fission. My other interests
-              include chess, tennis, violin, basketball, and gaming.
-            </div>
-            <div id='team-tabs-content-andrew-xu' class='hidden'>
+              <br />
+              <br />
               <span class='medium center'>
                 Engineer
               </span>
@@ -183,8 +130,8 @@
               functionality. Building a competition-ready robot with my team
               and seeing it succeed in many ways adds another page in my
               book.
-            </div>
-            <div id='team-tabs-content-jason-chua' class='hidden'>
+              <br />
+              <br />
               <span class='medium center'>
                 Engineer
               </span>
@@ -201,8 +148,8 @@
               an engineer when I grow up! All of these reasons are why I
               chose to join Stuy Fission. Being on the team is a very fun
               and educational experience!
-            </div>
-            <div id='team-tabs-content-thomas-ly' class='hidden'>
+              <br />
+              <br />
               <span class='medium center'>
                 Engineer
               </span>
@@ -222,8 +169,31 @@
               achieve great things with my team. Some things I like that
               don't relate to Robotics are gaming, swimming, programming,
               and reading.
+              <br />
+              <br />
             </div>
-            <div id='team-tabs-content-kenneth-li' class='hidden'>
+            <div id='team-tabs-content-programmers' class='hidden'>
+              <span class='medium center'>
+                Head of Programming
+              </span>
+              <hr />
+              <img src='data/team/alvin_lin.jpg' />
+              &nbsp; &nbsp; &nbsp; &nbsp;
+              I joined robotics because of an interest in computer programmers
+              as a career and I wanted to challenge myself with the difficulties
+              that robotics would present. From a young age, I've been extremely
+              interested in the workings of computers and I enjoy tinkering with
+              code in my free time. I enjoy the logical challenges presented by
+              code and the engineering challenges presented by robotics. I have
+              experience with object oriented coding languages and web design
+              and I have interned at an education company as a programmer. My
+              other hobbies aside from robotics include playing basketball,
+              League of Legends, piano, and guitar. As head of programming for
+              Stuy Fission 310, I am tasked with website design and maintenance
+              as well as robot programming and delegating programmers to do the
+              same.
+              <br />
+              <br />
               <span class='medium center'>
                 Programmer
               </span>
@@ -240,8 +210,27 @@
               In my spare time,  I enjoy playing video games, reading
               (mostly fiction), and playing the violin.
             </div>
+            <div id='team-tabs-content-marketers' class='hidden'>
+              <span class='medium center'>
+                Head of Marketing
+              </span>
+              <hr />
+              <img src='data/team/kevin_yan.jpg' />
+              &nbsp; &nbsp; &nbsp; &nbsp;
+              The first time I got involved with robotics was when I went to a
+              robotics camp at Johns Hopkins’ Center for Talented Youth with
+              Alvin. I fell in love with robotics and as soon as I returned home
+              from the camp, I bought my own Lego Mindstorms kit. In middle
+              school, Alvin and I joined the robotics team and ended up leading
+              the team. I also started to make my own money by selling, bracelets,
+              and rubik’s cubes to my classmates. Through that experience, I
+              learned to earn and manage my money. I hope to study at Harvard
+              business school. My combined experience in robotics and with money
+              led me to doing marketing for 310 Fission. My other interests
+              include chess, tennis, violin, basketball, and gaming.
+            </div>
           </div>
-        </ul>
+        </div>
       </div>
       <div class='content media'>
         <table>

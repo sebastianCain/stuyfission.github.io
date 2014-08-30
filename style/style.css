@@ -141,8 +141,10 @@ html, body {
 }
 
 #team-tabs li {
+  position: relative;
   display: inline;
   height: 200px;
+  width: 25%;
   margin: 5px;
 }
 
