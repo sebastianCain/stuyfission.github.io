@@ -142,6 +142,7 @@ html, body {
 
 #team-content-tabs {
   list-style-type: none;
+  margin: 0px;
 }
 
 #team-content-tabs li {
