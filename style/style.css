@@ -193,6 +193,8 @@ html, body {
 #team-tabs-content div {
   /* 100% of the the container minus 40px padding */
   width: calc(100% - 40px);
+  height: auto;
+  min-height: 350px;
 
   background: rgba(105, 105, 105, 0.6);
   margin: auto;
