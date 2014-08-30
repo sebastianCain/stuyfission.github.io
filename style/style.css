@@ -127,6 +127,9 @@ html, body {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 #team-tabs li {
