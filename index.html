@@ -332,8 +332,6 @@
     <script type='application/javascript'>
     var kickoffDate = 'September 6, 2014 12:00:00';
     var countdownDiv = document.getElementById('ftc-kickoff-countdown-timer');
-    countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
-
     setInterval(function() {
       countdownDiv.innerHTML = getDateStringUntil(kickoffDate) + " until FTC Kickoff";
     }, 1000);
