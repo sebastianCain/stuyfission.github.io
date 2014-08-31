@@ -8,7 +8,7 @@
  */
 function setSelected(selectedTab) {
   var tabs = document.getElementById('team-content-tabs')
-             .getElementsByTagName('a');
+             .getElementsByTagName('li');
   for (var i = 0; i < tabs.length; i++) {
     tabs[i].setAttribute('class', 'unselected');
   }

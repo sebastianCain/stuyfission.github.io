@@ -150,11 +150,6 @@ html, body {
   height: 200px;
   width: 25%;
   margin: 0px 5px;
-}
-
-#team-content-tabs li a {
-  height: 200px;
-  width: 100%;
   padding: 0px 10px;
   color: #000000;
   text-decoration: none;
@@ -173,8 +168,9 @@ html, body {
   transition: all 200ms;
 }
 
-#team-content-tabs li a:hover {
+#team-content-tabs li:hover {
   background: rgba(39, 39, 39, 0.6);
+  color: #bebebe;
 
   cursor: -webkit-pointer;
   cursor: -moz-pointer;
@@ -183,12 +179,12 @@ html, body {
   cursor: pointer;
 }
 
-#team-content-tabs li .selected {
+#team-content-tabs .selected {
   background: rgba(39, 39, 39, 0.6);
   color: #bebebe;
 }
 
-#team-content-tabs li .unselected {
+#team-content-tabs .unselected {
   background: rgba(105, 105, 105, 0.6);
 }
 
@@ -234,6 +230,11 @@ html, body {
 
 #team-content-text .hidden {
   display: none;
+}
+
+.robots {
+  height: 800px;
+  padding: 200px 0px;
 }
 
 .media {
