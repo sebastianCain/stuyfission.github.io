@@ -23,7 +23,9 @@
   width: 100%;
   min-width: 1080px;
   padding: 100px 0px;
-  text-align: center;
+  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .large {
@@ -82,9 +84,17 @@ html, body {
   width: 100%;
   min-width: 1080px;
   height: 100%;
-  text-align: right;
-  text-align: justify;
-  text-justify: inter-word;
+}
+
+.first {
+  height: 500px;
+  padding: 200px 0px;
+}
+
+.first img {
+  float: left;
+  width: 200px;
+  height: auto;
 }
 
 .ftc {
@@ -103,9 +113,6 @@ html, body {
 .ftc-text {
   border: 10px;
   padding: 10px;
-  text-align: left;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 #ftc-kickoff-countdown-timer {
@@ -190,6 +197,7 @@ html, body {
 
 #team-content-text {
   height: auto;
+  text-align: center;
 }
 
 #team-content-text div {
