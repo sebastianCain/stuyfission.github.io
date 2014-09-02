@@ -23,7 +23,6 @@
   width: 100%;
   min-width: 1080px;
   padding: 100px 0px;
-  text-align: left;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -88,18 +87,19 @@ html, body {
 
 .first {
   height: 500px;
-  padding: 200px 0px;
+  padding: 200px 100px 500px;
 }
 
 .first img {
   float: left;
   width: 200px;
   height: auto;
+  margin-right: 10px;
 }
 
 .ftc {
   height: 800px;
-  padding: 200px 100px 500px 100px;
+  padding: 200px 100px;
   font-size: 22px;
   background: #c4c4c4;
 }
@@ -117,8 +117,9 @@ html, body {
 }
 
 #ftc-kickoff-countdown-timer {
+  text-align: center;
   padding: 5px;
-  background: #ccc;
+  background: rgba(105, 105, 105, 0.6);
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -149,6 +150,7 @@ html, body {
 }
 
 #team-content-tabs {
+  text-align: center;
   list-style-type: none;
   margin: 0px;
 }
@@ -242,11 +244,13 @@ html, body {
 }
 
 .robots {
+  text-align: center;
   height: 800px;
   padding: 200px 0px;
 }
 
 .media {
+  text-align: center;
   height: 500px;
   padding: 200px 0px;
 }
@@ -269,4 +273,8 @@ html, body {
 
 .media img:hover {
   opacity: 1;
+}
+
+.copyright {
+  text-align: center;
 }
