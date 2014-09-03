@@ -218,6 +218,10 @@ html, body {
   border-radius: 10px;
 }
 
+#team-content-text div td[class="medium center"] {
+  padding-top: 30px;
+}
+
 #team-content-text div img {
   float: left;
   width: 150px;
