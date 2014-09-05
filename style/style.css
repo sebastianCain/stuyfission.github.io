@@ -11,6 +11,8 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -123,6 +125,8 @@ html, body {
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -143,9 +147,13 @@ html, body {
 
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   border-radius: 20px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  -ms-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  -o-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
@@ -168,13 +176,17 @@ html, body {
   -webkit-border-top-right-radius: 10px;
   -moz-border-radius-topleft: 10px;
   -moz-border-radius-topright: 10px;
+  -ms-border-top-left-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -o-border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -ms-transition: all 200ms;
-  -o-transition: all 20ms;
+  -o-transition: all 200ms;
   transition: all 200ms;
 }
 
@@ -215,6 +227,8 @@ html, body {
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -230,6 +244,8 @@ html, body {
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
 }
 

@@ -19,7 +19,21 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
+  
+  -ms-animation-name: banner;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-delay: 2000ms;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
 
+  -o-animation-name: banner;
+  -o-animation-duration: 1000ms;
+  -o-animation-delay: 2000ms;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: 1;
+  
   animation-name: banner;
   animation-duration: 1000ms;
   animation-delay: 2000ms;
@@ -36,6 +50,22 @@
   }
 }
 @-moz-keyframes banner {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-ms-keyframes banner {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-o-keyframes banner {
   0% {
     height: 100%;
   }
@@ -73,7 +103,21 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
+  
+  -ms-animation-name: banner-img;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-delay: 1000ms;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
 
+  -o-animation-name: banner-img;
+  -o-animation-duration: 2000ms;
+  -o-animation-delay: 1000ms;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: 1;
+  
   animation-name: banner-img;
   animation-duration: 2000ms;
   animation-delay: 1000ms;
@@ -101,6 +145,44 @@
   }
 }
 @-moz-keyframes banner-img {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+    right: calc(100% - 100px);
+    height: 100px;
+  }
+}
+@-ms-keyframes banner-img {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+    right: calc(100% - 100px);
+    height: 100px;
+  }
+}
+@-o-keyframes banner-img {
   0% {
     opacity: 0;
   }
@@ -155,6 +237,20 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
+  
+  -ms-animation-name: banner-name;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-delay: 3000ms;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  
+  -o-animation-name: banner-name;
+  -o-animation-duration: 2000ms;
+  -o-animation-delay: 3000ms;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: 1;
 
   animation-name: banner-name;
   animation-duration: 2000ms;
@@ -168,40 +264,70 @@
     opacity: 0;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
-@-moz-keyframes banner-img {
+@-moz-keyframes banner-name {
   0% {
     opacity: 0;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
-@keyframes banner-img {
+@-ms-keyframes banner-name {
   0% {
     opacity: 0;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
     background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
+  }
+}
+@keyframes banner-name {
+  0% {
+    opacity: 0;
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
+  }
+  100% {
+    opacity: 1;
+    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
+    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
     background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
@@ -222,7 +348,21 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
+  
+  -ms-animation-name: container;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-delay: 3000ms;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
 
+  -o-animation-name: container;
+  -o-animation-duration: 2000ms;
+  -o-animation-delay: 3000ms;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: 1;
+  
   animation-name: container;
   animation-duration: 2000ms;
   animation-delay: 3000ms;
@@ -239,6 +379,22 @@
   }
 }
 @-moz-keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes container {
   0% {
     opacity: 0;
   }
