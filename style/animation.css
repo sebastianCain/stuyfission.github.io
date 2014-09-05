@@ -262,73 +262,33 @@
 @-webkit-keyframes banner-name {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 @-moz-keyframes banner-name {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 @-ms-keyframes banner-name {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 @keyframes banner-name {
   0% {
     opacity: 0;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
   100% {
     opacity: 1;
-    background-image: -webkit-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -moz-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -ms-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: -o-linear-gradient(to right, #000000, #4d4d4d, #000000);
-    background-image: linear-gradient(to right, #000000, #4d4d4d, #000000);
   }
 }
 
