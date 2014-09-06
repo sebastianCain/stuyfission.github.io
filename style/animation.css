@@ -133,15 +133,11 @@
     opacity: 1;
   }
   50% {
-    left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
-    left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-moz-keyframes banner-img {
@@ -152,15 +148,11 @@
     opacity: 1;
   }
   50% {
-    left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
-    left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-ms-keyframes banner-img {
@@ -171,15 +163,11 @@
     opacity: 1;
   }
   50% {
-    left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
-    left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-o-keyframes banner-img {
@@ -190,15 +178,11 @@
     opacity: 1;
   }
   50% {
-    left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
-    left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @keyframes banner-img {
@@ -209,15 +193,11 @@
     opacity: 1;
   }
   50% {
-    left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
-    left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 

@@ -63,6 +63,7 @@ html, body {
 
 .banner-img {
   position: absolute;
+  display: inline;
   width: auto;
   height: 100%;
   z-index: 2;
