@@ -133,7 +133,7 @@ html, body {
 #team-content-tabs {
   text-align: center;
   list-style-type: none;
-  margin: 0px;
+  margin: -1px;
 }
 
 #team-content-tabs li {
