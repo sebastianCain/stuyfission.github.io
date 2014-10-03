@@ -20,15 +20,6 @@
   text-align: center;
 }
 
-.content {
-  display: block;
-  width: 100%;
-  min-width: 1080px;
-  padding: 100px 0px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .large {
   font-size: 40pt;
 }
@@ -61,14 +52,14 @@ html, body {
   z-index: 1;
 }
 
-.banner-img {
+#banner-img {
   position: absolute;
   width: auto;
   height: 100%;
   z-index: 2;
 }
 
-.banner-name {
+#banner-name {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -85,189 +76,26 @@ html, body {
   z-index: 1;
 }
 
-#container {
+#page-container {
   width: 100%;
   min-width: 1080px;
   height: 100%;
 }
 
-.first {
-  height: 1000px;
-  padding: 250px 20% 500px;
-}
-
-.first img {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.team {
-  height: auto;
-  background: url("../data/gallery/vectorbot.jpg");
-  background-size: 100% auto;
-}
-
-#team-content {
-  position: relative;
-  width: 80%;
-  min-width: 800px;
-  height: auto;
-  margin: auto;
-  padding: 20px;
-  background: rgba(196, 196, 196, 0.8);
-
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  -ms-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  -o-box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.75);
-}
-
-#team-content-tabs {
-  text-align: center;
-  list-style-type: none;
-  margin: -1px;
-}
-
-#team-content-tabs li {
-  display: inline;
-  height: 200px;
-  width: 25%;
-  margin: 0px 5px;
-  padding: 0px 10px;
-  color: #000000;
-  text-decoration: none;
-
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -ms-border-top-left-radius: 10px;
-  -ms-border-top-right-radius: 10px;
-  -o-border-top-left-radius: 10px;
-  -o-border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-  -webkit-transition: all 200ms;
-  -moz-transition: all 200ms;
-  -ms-transition: all 200ms;
-  -o-transition: all 200ms;
-  transition: all 200ms;
-}
-
-#team-content-tabs li:hover {
-  background: rgba(39, 39, 39, 0.6);
-  color: #bebebe;
-
-  cursor: -webkit-pointer;
-  cursor: -moz-pointer;
-  cursor: -ms-pointer;
-  cursor: -o-pointer;
-  cursor: pointer;
-}
-
-#team-content-tabs .selected {
-  background: rgba(39, 39, 39, 0.6);
-  color: #bebebe;
-}
-
-#team-content-tabs .unselected {
-  background: rgba(105, 105, 105, 0.6);
-}
-
-#team-content-text {
-  height: auto;
-  text-align: center;
-}
-
-#team-content-text div {
-  /* 100% of the the container minus 40px padding */
-  width: calc(100% - 40px);
-  height: auto;
-  min-height: 350px;
-
-  background: rgba(105, 105, 105, 0.6);
-  margin: 0px auto;
-  padding: 60px;
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-
-#team-content-text div td[class="medium center"] {
-  padding-top: 30px;
-}
-
-#team-content-text div img {
-  float: left;
-  width: 150px;
-  height: 200px;
-  margin: 0px 10px 0px 0px;
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-
-#team-content-text .visible {
+#content {
   display: block;
-  height: auto;
-  text-align: left;
+  width: 100%;
+  min-width: 1080px;
+  padding: 150px 0px;
+  margin: auto;
   text-align: justify;
   text-justify: inter-word;
-  background: rgba(39, 39, 39, 0.6);
-  color: #d8d8d8;
+
+  background-color: rgba(77, 77, 77, 0.6):
 }
 
-#team-content-text .hidden {
-  display: none;
-}
-
-.robots {
-  text-align: center;
-  height: 800px;
-  padding: 200px 0px;
-}
-
-.media {
-  text-align: center;
-  height: 500px;
-  padding: 200px 0px;
-}
-
-.media table {
-  margin: auto;
-}
-
-.media img {
-  width: 200px;
-  margin: 10px;
-  opacity: 0.5;
-
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-.media img:hover {
-  opacity: 1;
-}
-
-.copyright {
+#copyright {
+  width: 100%;
+  padding: 5px;
   text-align: center;
 }

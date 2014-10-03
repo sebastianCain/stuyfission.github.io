@@ -82,7 +82,7 @@
   }
 }
 
-.banner-img {
+#banner-img {
   opacity: 0;
   top: 0px;
   right: 0px;
@@ -221,7 +221,7 @@
   }
 }
 
-.banner-name {
+#banner-name {
   opacity: 0;
 
   -webkit-animation-name: banner-name;
