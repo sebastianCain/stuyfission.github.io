@@ -48,7 +48,13 @@ html, body {
   height: 100%;
   margin: 0px;
   font-family: "Open Sans", sans-serif;
-  background: #fff;
+  <!--background: #fff;-->
+    
+}
+
+body {
+  background-image: url('/data/background_image.jpg');
+  <!--did not work when placed in html, body-->
 }
 
 #banner {
