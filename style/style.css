@@ -48,7 +48,13 @@ html, body {
   height: 100%;
   margin: 0px;
   font-family: "Open Sans", sans-serif;
-  background: #fff;
+  <!--background: #fff;-->
+    
+}
+
+body {
+  background-image: url('/data/background_image.jpg');
+  <!--did not work when placed in html, body-->
 }
 
 #banner {
@@ -93,8 +99,8 @@ html, body {
 }
 
 .first {
-  height: 500px;
-  padding: 200px 100px 500px;
+  height: 1000px;
+  padding: 250px 20% 500px;
 }
 
 .first img {
@@ -102,37 +108,6 @@ html, body {
   width: 200px;
   height: auto;
   margin-right: 10px;
-}
-
-.ftc {
-  height: 800px;
-  padding: 200px 100px;
-  font-size: 22px;
-  background: #c4c4c4;
-}
-
-.ftc-logo {
-  height: 150px;
-  width: 150px;
-  float: left;
-  margin-right: 10px;
-}
-
-.ftc-text {
-  border: 10px;
-  padding: 10px;
-}
-
-#ftc-kickoff-countdown-timer {
-  text-align: center;
-  padding: 5px;
-  background: rgba(105, 105, 105, 0.6);
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
 }
 
 .team {
@@ -165,7 +140,7 @@ html, body {
 #team-content-tabs {
   text-align: center;
   list-style-type: none;
-  margin: 0px;
+  margin: -1px;
 }
 
 #team-content-tabs li {
