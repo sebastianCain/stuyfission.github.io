@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' />
     <link rel='stylesheet' type='text/css' href='style/style.css' />
     <link rel='stylesheet' type='text/css' href='style/animation.css' />
+    <link rel='stylesheet' type='text/css' href='style/tabs.css' />
   </head>
 
   <body>
@@ -21,18 +22,52 @@
     <div id='container'>
       <div id='content'>
         <div id='content-tabs'>
-          Tabs
+          <ul>
+            <li>
+              Home
+            </li>
+            <li>
+              Meet the Team
+            </li>
+            <li>
+              FIRST
+            </li>
+            <li>
+              FTC
+            </li>
+            <li>
+              Contact Us
+            </li>
+          </ul>
         </div>
         <div id='content-text'>
-          Text
+          <div>
+            Home
+          </div>
+          <div>
+            Meet the Team
+          </div>
+          <div>
+            FIRST
+          </div>
+          <div>
+            FTC
+          </div>
+          <div>
+            Contact Us
+          </div>
         </div>
       </div>
       <div id='copyright'>
         Copyright &copy; 2014 Stuy Fission 310. All Rights Reserved.
       </div>
     </div>
-    <script type='text/javascript' src='script/team-content.js'></script>
-    <script type='text/javascript' src='script/base.js'></script>
+    <script type='text/javascript' src='script/tabs.js'></script>
+    <script type='text/javascript'>
+      var contentContainerEl = document.getElementById('content');
+      var mainTabs = new TabbedSection(contentContainerEl);
+      mainTabs.build();
+    </script>
   </body>
 
 </html>

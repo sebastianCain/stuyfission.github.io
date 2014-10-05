@@ -1,5 +1,7 @@
 /*
  * This CSS file contains most of the styling needed in the FTC webpage.
+ * Styles for smaller subsections such as tabs and animations are located
+ * in their respective pages.
  * Author: Alvin Lin (alvin.lin@stuypulse.com)
  */
 
@@ -39,7 +41,7 @@ html, body {
   height: 100%;
   margin: 0px;
   font-family: "Open Sans", sans-serif;
-  background: #fff;
+  background-image: url('../data/background.jpg');
 }
 
 #banner {
@@ -76,26 +78,44 @@ html, body {
   z-index: 1;
 }
 
-#page-container {
+#container {
+  display: block;
   width: 100%;
-  min-width: 1080px;
   height: 100%;
+  padding: 150px;
 }
 
 #content {
-  display: block;
   width: 100%;
-  min-width: 1080px;
-  padding: 150px 0px;
+  min-width: 1200px;
+  min-height: 800px;
   margin: auto;
+  padding: 10px;
   text-align: justify;
   text-justify: inter-word;
+  background: rgba(77, 77, 77, 0.75);
 
-  background-color: rgba(77, 77, 77, 0.6):
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 
 #copyright {
-  width: 100%;
+  width: 600px;
   padding: 5px;
+  margin: 10px auto;
   text-align: center;
+  background-image: -webkit-linear-gradient(to right, #606060, #adadad, #606060);
+  background-image: -moz-linear-gradient(to right, #000000, #adadad, #000000);
+  background-image: -ms-linear-gradient(to right, #606060, #adadad, #606060);
+  background-image: -o-linear-gradient(to right, #606060, #adadad, #606060);
+  background-image: linear-gradient(to right, #606060, #adadad, #606060);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
