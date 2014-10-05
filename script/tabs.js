@@ -6,24 +6,25 @@ function TabbedSection(contentContainerEl) {
   this.contentContainerEl_ = contentContainerEl;
 };
 
+TabbedSection.onClick = function(contentEls, index) {
+};
+
 TabbedSection.prototype.build = function() {
   var tabContainerEl =
-      this.contentContainerEl_.getElementsByTagName('div')[0];
+      this.contentContainerEl_.getElementsByClassName('tab-tabs-container')[0];
   var contentContainerEl =
-      this.contentContainerEl_.getElementsByTagName('div')[1];
-
-  console.log(tabContainerEl, contentContainerEl);
-  // Apply the CSS styles to the tab and content container elements.
-  tabContainerEl.setAttribute('class', 'tab-tabs-container');
-  contentContainerEl.setAttribute('class', 'tab-content-container');
+      this.contentContainerEl_.getElementsByClassName('tab-content-container')[0];
 
   // Store the tab and content elements in parallel arrays. The arrays
   // must be parallel.
-  var tabEls = tabContainerEl.getElementsByTagName('li');
+  var tabEls = tabContainerEl.getElementsByTagName('div');
   var contentEls = contentContainerEl.getElementsByTagName('div');
   if (tabEls.length !== contentEls.length) {
     throw new Error("Unable to build tabs");
   }
 
-  // Apply the CSS styles to the tab elements and content elements.
+  // Set the onclick events.
+  for (var i = 0; i < tabEls.length; ++i) {
+    tabEls[i].onclick = null;
+  }
 };

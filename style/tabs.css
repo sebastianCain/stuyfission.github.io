@@ -1,35 +1,61 @@
 .tab-tabs-container {
   width: 100%;
+  height: 40px;
   list-style-type: none;
   text-align: center;
+  margin: 0;
 }
 
-.tab-tabs-container li {
-  display: inline;
-  width: 700px;
+.tab-tabs-container div {
+  display: inline-block;
+  width: 175px;
+  height: 40px;
   margin: 0px 5px;
-  padding: 10px;
-  background: rgba(187, 187, 187, 0.5);
+  line-height: 40px;
 
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-top-left-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  -ms-border-top-left-radius: 5px;
-  -ms-border-top-right-radius: 5px;
-  -o-border-top-left-radius: 5px;
-  -o-border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.tab-tabs-container div:hover {
+  background: rgba(85, 85, 85, 0.5);
+}
+
+.tab-tabs-container .unselected {
+  background: rgba(132, 132, 132, 0.5);
+  cursor: pointer;
+}
+
+.tab-tabs-container .selected {
+  background: rgba(85, 85, 85, 0.5);
 }
 
 .tab-content-container {
   position: relative;
-  display: block;
   width: 100%;
-  height: 100%;
+  height: 100px;
   margin: 0;
-  background: #ABCDEF;
+  background: rgba(85, 85, 85, 0.5);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .tab-content-container div {
@@ -40,5 +66,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(187, 187, 187, 0.5);
+}
+
+.tab-content-container .unselected {
+  display: none;
+}
+
+.tab-content-container .selected {
+  display: block;
 }
