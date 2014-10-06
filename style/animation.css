@@ -19,7 +19,7 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
-  
+
   -ms-animation-name: banner;
   -ms-animation-duration: 1000ms;
   -ms-animation-delay: 2000ms;
@@ -33,7 +33,7 @@
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
-  
+
   animation-name: banner;
   animation-duration: 1000ms;
   animation-delay: 2000ms;
@@ -103,7 +103,7 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
-  
+
   -ms-animation-name: banner-img;
   -ms-animation-duration: 2000ms;
   -ms-animation-delay: 1000ms;
@@ -117,7 +117,7 @@
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
-  
+
   animation-name: banner-img;
   animation-duration: 2000ms;
   animation-delay: 1000ms;
@@ -216,7 +216,7 @@
   100% {
     opacity: 1;
     left: 0px;
-    right: calc(100% - 100px);
+    right: 100%;
     height: 100px;
   }
 }
@@ -237,14 +237,14 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
-  
+
   -ms-animation-name: banner-name;
   -ms-animation-duration: 2000ms;
   -ms-animation-delay: 3000ms;
   -ms-animation-fill-mode: forwards;
   -ms-animation-timing-function: linear;
   -ms-animation-iteration-count: 1;
-  
+
   -o-animation-name: banner-name;
   -o-animation-duration: 2000ms;
   -o-animation-delay: 3000ms;
@@ -308,7 +308,7 @@
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
-  
+
   -ms-animation-name: fade-in;
   -ms-animation-duration: 2000ms;
   -ms-animation-delay: 3000ms;
@@ -322,7 +322,7 @@
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
-  
+
   animation-name: fade-in;
   animation-duration: 2000ms;
   animation-delay: 3000ms;
