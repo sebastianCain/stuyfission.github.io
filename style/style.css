@@ -111,7 +111,7 @@ html, body {
 
 #media img {
   display: inline-block;
-  width: 200px;
+  width: auto;
   height: 75px;
   margin: 0px 25px;
   opacity: 0.5;
