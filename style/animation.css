@@ -135,13 +135,11 @@
   50% {
     left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
     left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-moz-keyframes banner-img {
@@ -154,13 +152,11 @@
   50% {
     left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
     left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-ms-keyframes banner-img {
@@ -173,13 +169,11 @@
   50% {
     left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
     left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @-o-keyframes banner-img {
@@ -192,13 +186,11 @@
   50% {
     left: 0px;
     right: 0px;
-    height: 100%;
   }
   100% {
     opacity: 1;
     left: 0px;
     right: calc(100% - 100px);
-    height: 100px;
   }
 }
 @keyframes banner-img {
@@ -213,6 +205,7 @@
   }
   100% {
     opacity: 1;
+    /* Hack-fix for IE */
     right: 100%;
     left: 0px;
   }
