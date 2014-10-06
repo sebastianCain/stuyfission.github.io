@@ -197,7 +197,13 @@
   }
   100% {
     opacity: 1;
+<<<<<<< HEAD
     right: calc(100% - 100px);
+=======
+    left: 0px;
+    right: 100%;
+    height: 100px;
+>>>>>>> 54edb87573bbf57a729ea66e6f586435ec7fa17e
   }
 }
 
