@@ -21,7 +21,7 @@
     </div>
     <div id='container'>
       <div id='content'>
-        <div class='tab-tabs-container'>
+        <div class='main-tab-tabs-container'>
           <div class='selected'>
             Home
           </div>
@@ -38,7 +38,7 @@
             Contact Us
           </div>
         </div>
-        <div class='tab-content-container'>
+        <div class='main-tab-content-container'>
           <div class='selected'>
             Home
           </div>
@@ -73,9 +73,12 @@
     </div>
     <script type='text/javascript' src='script/tabs.js'></script>
     <script type='text/javascript'>
-      var contentContainerEl = document.getElementById('content');
-      var mainTabs = new TabbedSection(contentContainerEl);
-      mainTabs.build();
+      var tabContainerEl = document.getElementsByClassName(
+          'main-tab-tabs-container')[0];
+      var contentContainerEl = document.getElementsByClassName(
+          'main-tab-content-container')[0];
+      var mainTabs = new TabbedSection(tabContainerEl, contentContainerEl);
+      mainTabs.applyClickEvents();
     </script>
   </body>
 

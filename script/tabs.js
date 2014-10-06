@@ -2,22 +2,18 @@
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
-function TabbedSection(contentContainerEl) {
+function TabbedSection(tabContainerEl, contentContainerEl) {
+  this.tabContainerEl_ = tabContainerEl;
   this.contentContainerEl_ = contentContainerEl;
 };
 
-TabbedSection.prototype.build = function() {
-  var tabContainerEl =
-      this.contentContainerEl_.getElementsByClassName('tab-tabs-container')[0];
-  var contentContainerEl =
-      this.contentContainerEl_.getElementsByClassName('tab-content-container')[0];
-
+TabbedSection.prototype.applyClickEvents = function() {
   // Store the tab and content elements in parallel arrays. The arrays
-  // must be parallel.
-  var tabEls = tabContainerEl.getElementsByTagName('div');
-  var contentEls = contentContainerEl.getElementsByTagName('div');
+  // must be parallel and equal in length (1 tab per section).
+  var tabEls = this.tabContainerEl_.getElementsByTagName('div');
+  var contentEls = this.contentContainerEl_.getElementsByTagName('div');
   if (tabEls.length !== contentEls.length) {
-    throw new Error("Unable to build tabs");
+    throw new Error("Unable to build tabs.");
   }
 
   // Set the onclick events.
