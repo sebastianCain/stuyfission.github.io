@@ -110,11 +110,15 @@ html, body {
   text-align: center;
 }
 
-#media img {
+#media a {
   display: inline-block;
   width: auto;
-  height: 75px;
+  height: auto;
   margin: 0px 25px;
+}
+#media img {
+  width: auto;
+  height: 75px;
   opacity: 0.5;
 
   -webkit-transition: all 500ms;
