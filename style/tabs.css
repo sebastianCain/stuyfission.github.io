@@ -84,7 +84,7 @@
 }
 
 /* Team biography tabs */
-.content-team-tabs-container {
+#team-content-tabs-container {
   width: 100%;
   height: 40px;
   list-style-type: none;
@@ -92,7 +92,7 @@
   margin: 0;
 }
 
-.content-team-tabs-container > div {
+#team-content-tabs-container > div {
   display: inline-block;
   width: 150px;
   height: 40px;
@@ -117,23 +117,23 @@
   transition: all 500ms;
 }
 
-.content-team-tabs-container > div:hover {
+#team-content-tabs-container > div:hover {
   background: rgba(85, 85, 85, 0.5);
 }
 
-.content-team-tabs-container > .unselected {
+#team-content-tabs-container > .unselected {
   background: rgba(132, 132, 132, 0.5);
   cursor: pointer;
 }
 
-.content-team-tabs-container > .selected {
+#team-content-tabs-container > .selected {
   background: rgba(85, 85, 85, 0.5);
 }
 
-.content-team-content-container {
+#team-content-content-container {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 490px;
   margin: 0;
   background: rgba(85, 85, 85, 0.5);
 
@@ -144,7 +144,7 @@
   border-radius: 10px;
 }
 
-.content-team-content-container > div {
+#team-content-content-container > div {
   position: absolute;
   width: auto;
   height: auto;
@@ -155,11 +155,11 @@
   padding: 10px;
 }
 
-.content-team-content-container > .unselected {
+#team-content-content-container > .unselected {
   display: none;
 }
 
-.content-team-content-container > .selected {
+#team-content-content-container > .selected {
   display: block;
 }
 
