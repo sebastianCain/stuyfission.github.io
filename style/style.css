@@ -81,14 +81,15 @@ html, body {
 #container {
   display: block;
   width: 100%;
+  min-width: 1080px;
   padding: 150px 150px 50px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 #content {
-  width: 100%;
-  min-width: 1080px;
+  width: auto;
+  min-width: 900px;
   min-height: 600px;
   margin: auto;
   padding: 10px;
@@ -103,7 +104,7 @@ html, body {
 
 #media {
   width: 100%;
-  min-width: 1080px;
+  min-width: 900px;
   display: block;
   margin: 50px auto;
   text-align: center;
