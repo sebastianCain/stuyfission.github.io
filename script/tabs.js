@@ -6,9 +6,6 @@ function TabbedSection(contentContainerEl) {
   this.contentContainerEl_ = contentContainerEl;
 };
 
-TabbedSection.onClick = function(contentEls, index) {
-};
-
 TabbedSection.prototype.build = function() {
   var tabContainerEl =
       this.contentContainerEl_.getElementsByClassName('tab-tabs-container')[0];
@@ -24,7 +21,59 @@ TabbedSection.prototype.build = function() {
   }
 
   // Set the onclick events.
-  for (var i = 0; i < tabEls.length; ++i) {
-    tabEls[i].onclick = null;
+  tabEls[0].onclick = function() {
+    for (var j = 0; j < tabEls.length; ++j) {
+      if (j == 0) {
+        tabEls[j].setAttribute('class', 'selected');
+        contentEls[j].setAttribute('class', 'selected');
+      } else {
+        tabEls[j].setAttribute('class', 'unselected');
+        contentEls[j].setAttribute('class', 'unselected');
+      }
+    }
+  }
+  tabEls[1].onclick = function() {
+    for (var j = 0; j < tabEls.length; ++j) {
+      if (j == 1) {
+        tabEls[j].setAttribute('class', 'selected');
+        contentEls[j].setAttribute('class', 'selected');
+      } else {
+        tabEls[j].setAttribute('class', 'unselected');
+        contentEls[j].setAttribute('class', 'unselected');
+      }
+    }
+  }
+  tabEls[2].onclick = function() {
+    for (var j = 0; j < tabEls.length; ++j) {
+      if (j == 2) {
+        tabEls[j].setAttribute('class', 'selected');
+        contentEls[j].setAttribute('class', 'selected');
+      } else {
+        tabEls[j].setAttribute('class', 'unselected');
+        contentEls[j].setAttribute('class', 'unselected');
+      }
+    }
+  }
+  tabEls[3].onclick = function() {
+    for (var j = 0; j < tabEls.length; ++j) {
+      if (j == 3) {
+        tabEls[j].setAttribute('class', 'selected');
+        contentEls[j].setAttribute('class', 'selected');
+      } else {
+        tabEls[j].setAttribute('class', 'unselected');
+        contentEls[j].setAttribute('class', 'unselected');
+      }
+    }
+  }
+  tabEls[4].onclick = function() {
+    for (var j = 0; j < tabEls.length; ++j) {
+      if (j == 4) {
+        tabEls[j].setAttribute('class', 'selected');
+        contentEls[j].setAttribute('class', 'selected');
+      } else {
+        tabEls[j].setAttribute('class', 'unselected');
+        contentEls[j].setAttribute('class', 'unselected');
+      }
+    }
   }
 };

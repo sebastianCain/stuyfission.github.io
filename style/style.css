@@ -81,7 +81,7 @@ html, body {
 #container {
   display: block;
   width: 100%;
-  padding: 150px;
+  padding: 150px 150px 50px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -99,6 +99,30 @@ html, body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+}
+
+#media {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#media img {
+  display: inline-block;
+  width: 200px;
+  height: 75px;
+  margin: 0px 25px;
+  opacity: 0.5;
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+#media img:hover {
+  opacity: 1;
 }
 
 #copyright {
