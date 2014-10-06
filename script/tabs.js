@@ -2,74 +2,52 @@
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
-function TabbedSection(tabContainerEl, contentContainerEl) {
-  this.tabContainerEl_ = tabContainerEl;
-  this.contentContainerEl_ = contentContainerEl;
-};
+/**
+ * @private
+ */
+function showSelected (tabContainerId, contentContainerId, index) {
+  var tabContainerEl = document.getElementById(tabContainerId);
+  var contentContainerEl = document.getElementById(contentContainerId);
 
-TabbedSection.prototype.applyClickEvents = function() {
   // Store the tab and content elements in parallel arrays. The arrays
   // must be parallel and equal in length (1 tab per section).
-  var tabEls = this.tabContainerEl_.getElementsByTagName('div');
-  var contentEls = this.contentContainerEl_.getElementsByTagName('div');
+  var tabEls = getImmediateChildren(
+      tabContainerEl, 'DIV');
+  var contentEls = getImmediateChildren(
+      contentContainerEl, 'DIV');
+
+  for (var i = 0; i < contentEls.length; ++i) {
+    if (i == index) {
+      tabEls[i].setAttribute('class', 'selected');
+      contentEls[i].setAttribute('class', 'selected');
+    } else {
+      tabEls[i].setAttribute('class', 'unselected');
+      contentEls[i].setAttribute('class', 'unselected');
+    }
+  }
+};
+
+/**
+ * This function applies tab switching behavior to the tabs.
+ * @param {string} tabContainerId
+ * @param {string} contentContainerId
+ */
+function applyClickEvents (tabContainerId, contentContainerId) {
+  // Check if the tabs have the same number of divs as the content divs.
+  var tabContainerEl = document.getElementById(tabContainerId);
+  var contentContainerEl = document.getElementById(contentContainerId);
+  var tabEls = getImmediateChildren(
+      tabContainerEl, 'DIV');
+  var contentEls = getImmediateChildren(
+      contentContainerEl, 'DIV');
   if (tabEls.length !== contentEls.length) {
     throw new Error("Unable to build tabs.");
   }
 
   // Set the onclick events.
-  tabEls[0].onclick = function() {
-    for (var j = 0; j < tabEls.length; ++j) {
-      if (j == 0) {
-        tabEls[j].setAttribute('class', 'selected');
-        contentEls[j].setAttribute('class', 'selected');
-      } else {
-        tabEls[j].setAttribute('class', 'unselected');
-        contentEls[j].setAttribute('class', 'unselected');
-      }
-    }
-  }
-  tabEls[1].onclick = function() {
-    for (var j = 0; j < tabEls.length; ++j) {
-      if (j == 1) {
-        tabEls[j].setAttribute('class', 'selected');
-        contentEls[j].setAttribute('class', 'selected');
-      } else {
-        tabEls[j].setAttribute('class', 'unselected');
-        contentEls[j].setAttribute('class', 'unselected');
-      }
-    }
-  }
-  tabEls[2].onclick = function() {
-    for (var j = 0; j < tabEls.length; ++j) {
-      if (j == 2) {
-        tabEls[j].setAttribute('class', 'selected');
-        contentEls[j].setAttribute('class', 'selected');
-      } else {
-        tabEls[j].setAttribute('class', 'unselected');
-        contentEls[j].setAttribute('class', 'unselected');
-      }
-    }
-  }
-  tabEls[3].onclick = function() {
-    for (var j = 0; j < tabEls.length; ++j) {
-      if (j == 3) {
-        tabEls[j].setAttribute('class', 'selected');
-        contentEls[j].setAttribute('class', 'selected');
-      } else {
-        tabEls[j].setAttribute('class', 'unselected');
-        contentEls[j].setAttribute('class', 'unselected');
-      }
-    }
-  }
-  tabEls[4].onclick = function() {
-    for (var j = 0; j < tabEls.length; ++j) {
-      if (j == 4) {
-        tabEls[j].setAttribute('class', 'selected');
-        contentEls[j].setAttribute('class', 'selected');
-      } else {
-        tabEls[j].setAttribute('class', 'unselected');
-        contentEls[j].setAttribute('class', 'unselected');
-      }
-    }
+  for (var i = 0; i < tabEls.length; ++i) {
+    tabEls[i].setAttribute(
+        'onclick', 'showSelected("' + tabContainerId + '","' +
+        contentContainerId + '",' + i.toString() + ')');
   }
 };

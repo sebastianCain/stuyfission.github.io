@@ -21,7 +21,11 @@
     </div>
     <div id='container'>
       <div id='content'>
-        <div class='main-tab-tabs-container'>
+        <!--
+        The classes that the tabs and content divs are set to are what they
+        default to.
+        -->
+        <div id='main-tab-tabs-container'>
           <div class='selected'>
             Home
           </div>
@@ -38,12 +42,12 @@
             Contact Us
           </div>
         </div>
-        <div class='main-tab-content-container'>
+        <div id='main-tab-content-container'>
           <div class='selected'>
             Home
           </div>
           <div class='unselected'>
-            Meet the Team
+            TEAM
           </div>
           <div class='unselected'>
             FIRST
@@ -71,14 +75,10 @@
     <div id='copyright'>
       Copyright &copy; 2014 Stuy Fission 310. All Rights Reserved.
     </div>
+    <script type='text/javascript' src='script/base.js'></script>
     <script type='text/javascript' src='script/tabs.js'></script>
     <script type='text/javascript'>
-      var tabContainerEl = document.getElementsByClassName(
-          'main-tab-tabs-container')[0];
-      var contentContainerEl = document.getElementsByClassName(
-          'main-tab-content-container')[0];
-      var mainTabs = new TabbedSection(tabContainerEl, contentContainerEl);
-      mainTabs.applyClickEvents();
+    applyClickEvents('main-tab-tabs-container', 'main-tab-content-container');
     </script>
   </body>
 

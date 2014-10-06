@@ -21,3 +21,21 @@ function getDateStringUntil(date) {
   var s = parseInt(seconds_left % 60);
   return d + ' days, ' + h + ' hours, ' + m + ' minutes, and ' + s + ' seconds';
 };
+
+/**
+ * This function returns an array of the immediate child nodes
+ * of a certain type.
+ * @param {Element} element Parent element.
+ * @param {string} nodeType Type of child node.
+ */
+function getImmediateChildren(element, nodeType) {
+  var listItems = [];
+  var children = element.childNodes;
+  for (var i = 0; i < children.length; i++) {
+    if (children[i].nodeName == nodeType) {
+      listItems.push(children[i]);
+    }
+  }
+
+  return listItems;
+};
