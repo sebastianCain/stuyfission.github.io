@@ -145,6 +145,19 @@ html, body {
   border-radius: 5px;
 }
 
+#content-first img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+#content-ftc img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
 #media {
   width: 100%;
   min-width: 900px;
