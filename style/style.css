@@ -103,7 +103,46 @@ html, body {
 
 #content-team {
   width: 100%;
+  margin: auto;
+  border-spacing: 5px;
+}
+
+#content-team th {
+  width: 33%;
+  height: 100%;
   text-align: center;
+  background: rgba(177, 177, 177, 0.75);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#content-team td {
+  padding: 5px;
+  height: 100px;
+  text-align: left;
+  background: rgba(177, 177, 177, 0.75);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#content-team img {
+  float: top;
+  width: 90px;
+  height: 120px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 #media {
