@@ -51,9 +51,9 @@
 }
 
 #main-tab-content-container {
-  position: relative;
   width: 100%;
-  min-height: 350px;
+  height: 100%;
+  min-height: 440px;
   margin: 0;
   background: rgba(85, 85, 85, 0.5);
 
@@ -65,7 +65,6 @@
 }
 
 #main-tab-content-container > div {
-  position: absolute;
   width: 100%;
   padding: 10px;
 }
