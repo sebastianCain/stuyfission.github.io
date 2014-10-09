@@ -44,7 +44,7 @@
   transition: all 500ms;
 }
 
-#galllery .gallery-thumbnails img:hover {
+#gallery .gallery-thumbnails img:hover {
   opacity: 1;
 }
 
