@@ -1,11 +1,13 @@
 /**
+ * This file contains all the necesary scripts for tabs in any
+ * section that needs tabs.
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
 /**
  * @private
  */
-function showSelected (tabContainerId, contentContainerId, index) {
+function showSelectedTab (tabContainerId, contentContainerId, index) {
   var tabContainerEl = document.getElementById(tabContainerId);
   var contentContainerEl = document.getElementById(contentContainerId);
 
@@ -32,7 +34,7 @@ function showSelected (tabContainerId, contentContainerId, index) {
  * @param {string} tabContainerId
  * @param {string} contentContainerId
  */
-function applyClickEvents (tabContainerId, contentContainerId) {
+function applyTabClickEvents (tabContainerId, contentContainerId) {
   // Check if the tabs have the same number of divs as the content divs.
   var tabContainerEl = document.getElementById(tabContainerId);
   var contentContainerEl = document.getElementById(contentContainerId);
@@ -47,7 +49,7 @@ function applyClickEvents (tabContainerId, contentContainerId) {
   // Set the onclick events.
   for (var i = 0; i < tabEls.length; ++i) {
     tabEls[i].setAttribute(
-        'onclick', 'showSelected("' + tabContainerId + '","' +
+        'onclick', 'showSelectedTab("' + tabContainerId + '","' +
         contentContainerId + '",' + i.toString() + ')');
   }
 };

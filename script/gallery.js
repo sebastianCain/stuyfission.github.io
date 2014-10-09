@@ -14,7 +14,48 @@ function Gallery(parentEl, objectName) {
   this.parentEl_ = parentEl;
   this.objectName_ = objectName;
 
+  /** @type {Element} */
   this.pictures_ = [];
+};
+
+/**
+ * This function takes a link, a width in pixels, and a height in pixels,
+ * respectively, and creates an <img> element with the given src, width,
+ * and height. This function returns the <img> element.
+ * If no width and height are specified, the image will default to the size
+ * of the given image.
+ */
+Gallery.createImg = function(src, width, height) {
+  var img = document.createElement('img');
+  img.setAttribute('src', src);
+
+  if (width !== undefined) {
+    img.setAttribute('width', width);
+  }
+  if (height !== undefined) {
+    img.setAttribute('height', height);
+  }
+
+  return img;
+};
+
+/**
+ * This function takes the name of a CSS class and creates a <div>
+ * element with that class. It will returns the <div> element.
+ * If no class name is provided, it will just create a <div> element
+ * with no attributes.
+ */
+Gallery.createDiv = function(className, id) {
+  var div = document.createElement('div');
+
+  if (className !== undefined && className !== null) {
+    div.setAttribute('class', className);
+  }
+  if (id !== undefined) {
+    div.setAttribute('id', id);
+  }
+
+  return div;
 };
 
 /**
@@ -23,8 +64,8 @@ function Gallery(parentEl, objectName) {
  * @param {string} caption
  */
 Gallery.prototype.addPicture = function(url, caption) {
-  var thumbnail = createImg(url);
-  var displayPicture = createImg(url);
+  var thumbnail = Gallery.createImg(url);
+  var displayPicture = Gallery.createImg(url);
 
   this.pictures_.push(
       {'thumbnail' : thumbnail,
@@ -35,8 +76,8 @@ Gallery.prototype.addPicture = function(url, caption) {
  * Builds the gallery and appends it to the parent element.
  */
 Gallery.prototype.build = function() {
-  var thumbnailContainer = createDiv('gallery-thumbnails');
-  var displayContainer = createDiv('gallery-display');
+  var thumbnailContainer = Gallery.createDiv('gallery-thumbnails');
+  var displayContainer = Gallery.createDiv('gallery-display');
   for (var i = 0; i < this.pictures_.length; i++) {
     // Sets an onclick property for each thumbnail that will call
     // the changeImage function
