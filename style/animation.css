@@ -82,7 +82,7 @@
   }
 }
 
-.banner-img {
+#banner-img {
   opacity: 0;
   top: 0px;
   right: 0px;
@@ -197,50 +197,51 @@
   }
   100% {
     opacity: 1;
+    /* Hack-fix for IE */
     right: 100%;
     left: 0px;
   }
 }
 
-.banner-name {
+#banner-name, #container, #copyright {
   opacity: 0;
 
-  -webkit-animation-name: banner-name;
+  -webkit-animation-name: fade-in;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-delay: 3000ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
 
-  -moz-animation-name: banner-name;
+  -moz-animation-name: fade-in;
   -moz-animation-duration: 2000ms;
   -moz-animation-delay: 3000ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
 
-  -ms-animation-name: banner-name;
+  -ms-animation-name: fade-in;
   -ms-animation-duration: 2000ms;
   -ms-animation-delay: 3000ms;
   -ms-animation-fill-mode: forwards;
   -ms-animation-timing-function: linear;
   -ms-animation-iteration-count: 1;
 
-  -o-animation-name: banner-name;
+  -o-animation-name: fade-in;
   -o-animation-duration: 2000ms;
   -o-animation-delay: 3000ms;
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
 
-  animation-name: banner-name;
+  animation-name: fade-in;
   animation-duration: 2000ms;
   animation-delay: 3000ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
-@-webkit-keyframes banner-name {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -248,7 +249,7 @@
     opacity: 1;
   }
 }
-@-moz-keyframes banner-name {
+@-moz-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -256,7 +257,7 @@
     opacity: 1;
   }
 }
-@-ms-keyframes banner-name {
+@-ms-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -264,7 +265,7 @@
     opacity: 1;
   }
 }
-@keyframes banner-name {
+@-o-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -272,78 +273,7 @@
     opacity: 1;
   }
 }
-
-#container {
-  opacity: 0;
-
-  -webkit-animation-name: container;
-  -webkit-animation-duration: 2000ms;
-  -webkit-animation-delay: 3000ms;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-
-  -moz-animation-name: container;
-  -moz-animation-duration: 2000ms;
-  -moz-animation-delay: 3000ms;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: 1;
-
-  -ms-animation-name: container;
-  -ms-animation-duration: 2000ms;
-  -ms-animation-delay: 3000ms;
-  -ms-animation-fill-mode: forwards;
-  -ms-animation-timing-function: linear;
-  -ms-animation-iteration-count: 1;
-
-  -o-animation-name: container;
-  -o-animation-duration: 2000ms;
-  -o-animation-delay: 3000ms;
-  -o-animation-fill-mode: forwards;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: 1;
-
-  animation-name: container;
-  animation-duration: 2000ms;
-  animation-delay: 3000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-@-webkit-keyframes container {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes container {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes container {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes container {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes container {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
