@@ -15,7 +15,7 @@ function Gallery(parentEl, objectName) {
   this.objectName_ = objectName;
 
   /** @type {Element} */
-  this.pictures_ = [];
+  this.elements_ = [];
 };
 
 /**
@@ -59,55 +59,91 @@ Gallery.createDiv = function(className, id) {
 };
 
 /**
+ * This function takes the name of a CSS class and creates a <span>
+ * element with that class. It returns the <span> element.
+ * If no class name is provided, it will just create a <span> element
+ * with no attributes.
+ */
+Gallery.createSpan = function(className, id) {
+  var span = document.createElement('span');
+
+  if (className !== undefined && className !== null) {
+    span.setAttribute('class', className);
+  }
+  if (id !== undefined) {
+    span.setAttribute('id', id);
+  }
+
+  return span;
+};
+
+/**
  * Adds pictures to this gallery object.
  * @param {string} url URL of the picture
  * @param {string} caption
  */
 Gallery.prototype.addPicture = function(url, caption) {
-  var thumbnail = Gallery.createImg(url);
-  var displayPicture = Gallery.createImg(url);
+  var thumbnailEl = Gallery.createImg(url);
+  var displayPictureEl = Gallery.createImg(url);
+  var captionEl = Gallery.createSpan();
 
-  this.pictures_.push(
-      {'thumbnail' : thumbnail,
-       'displayPicture' : displayPicture});
+  if (caption !== null && caption !== undefined) {
+    captionEl.innerHTML = caption;
+  }
+
+  this.elements_.push(
+      {'thumbnailEl' : thumbnailEl,
+       'displayPictureEl' : displayPictureEl,
+       'captionEl' : captionEl});
 };
 
 /**
  * Builds the gallery and appends it to the parent element.
  */
 Gallery.prototype.build = function() {
-  var thumbnailContainer = Gallery.createDiv('gallery-thumbnails');
-  var displayContainer = Gallery.createDiv('gallery-display');
-  for (var i = 0; i < this.pictures_.length; i++) {
+  var thumbnailContainerEl = Gallery.createDiv('gallery-thumbnails');
+  var displayContainerEl = Gallery.createDiv('gallery-display');
+  for (var i = 0; i < this.elements_.length; i++) {
     // Sets an onclick property for each thumbnail that will call
-    // the changeImage function
-    this.pictures_[i].thumbnail.setAttribute(
+    // the changeImage function and adds the thumbnails to the DOM.
+    this.elements_[i].thumbnailEl.setAttribute(
         'onclick',
         this.objectName_+'.changeImage('+i.toString()+')');
-    thumbnailContainer.appendChild(this.pictures_[i].thumbnail);
+    thumbnailContainerEl.appendChild(this.elements_[i].thumbnailEl);
 
-    // Sets the displays of the pictures to 'none'.
-    this.pictures_[i].displayPicture.style.display = 'none';
-    displayContainer.appendChild(this.pictures_[i].displayPicture);
+    // Sets the displays of the pictures to 'none' and adds the pictures
+    // to the DOM.
+    this.elements_[i].displayPictureEl.style.display = 'none';
+    displayContainerEl.appendChild(this.elements_[i].displayPictureEl);
+
+    // Sets the displays of the captions to 'none' and adds the captions
+    // to the DOM.
+    this.elements_[i].captionEl.style.display = 'none';
+    displayContainerEl.appendChild(this.elements_[i].captionEl);
   }
 
-  this.parentEl_.appendChild(thumbnailContainer);
-  this.parentEl_.appendChild(displayContainer);
+  this.parentEl_.appendChild(thumbnailContainerEl);
+  this.parentEl_.appendChild(displayContainerEl);
 };
 
 /**
  * @private
  */
 Gallery.prototype.changeImage = function(index) {
-	for (var i = 0; i < this.pictures_.length; i++) {
-    this.pictures_[i].displayPicture.style.display = 'none';
-	}
-  this.pictures_[index].displayPicture.style.display = 'block';
+  for (var i = 0; i < this.elements_.length; i++) {
+    if (i == index) {
+      this.elements_[index].displayPictureEl.style.display = 'block';
+      this.elements_[index].captionEl.style.display = 'block';
+    } else {
+      this.elements_[i].displayPictureEl.style.display = 'none';
+      this.elements_[i].captionEl.style.display = 'none';
+    }
+  }
 };
 
 /**
  * Returns a random index of an image in the pictures array.
  */
 Gallery.prototype.randIndex = function() {
-  return Math.floor((Math.random() * 100)) % this.pictures_.length;
+  return Math.floor((Math.random() * 1000)) % this.elements_.length;
 };
