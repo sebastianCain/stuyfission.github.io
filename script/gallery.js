@@ -1,6 +1,7 @@
 /**
  * This file contains all the scripts necessary to generate the picture
  * display and describes the behaviors of the pictures when clicked.
+ * Classes, I ace that. Bitches, I chase that. Wind wall, I face that.
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 

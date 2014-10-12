@@ -4,10 +4,15 @@
  * @author Alvin Lin (alvin.lin@stuypulse.com)
  */
 
+function TabbedSection(tabContainerId, contentContainerId) {
+  this.tabContainerEl_ = document.getElementById(tabContainerId);
+  this.contentContainerEl_ = document.getElementById(contentContainerId);
+}
+
 /**
  * @private
  */
-function showSelectedTab (tabContainerId, contentContainerId, index) {
+TabbedSection.showSelectedTab  = function (tabContainerId, contentContainerId, index) {
   var tabContainerEl = document.getElementById(tabContainerId);
   var contentContainerEl = document.getElementById(contentContainerId);
 
