@@ -54,7 +54,7 @@ function applyTabClickEvents (tabContainerId, contentContainerId) {
   // Set the onclick events.
   for (var i = 0; i < tabEls.length; ++i) {
     tabEls[i].setAttribute(
-        'onclick', 'showSelectedTab("' + tabContainerId + '","' +
+        'onclick', 'TabbedSection.showSelectedTab("' + tabContainerId + '","' +
         contentContainerId + '",' + i.toString() + ')');
   }
 };
