@@ -1,0 +1,110 @@
+/*
+ * This CSS file contains most of the styling for the gallery.
+ * Author: Alvin Lin (alvin.lin@stuypulse.com)
+ */
+
+#gallery {
+  width: 100%;
+  padding: 10px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#gallery img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#gallery .gallery-thumbnails {
+  width: 100%;
+  height: 125px;
+  margin-bottom: 5px;
+  text-align: center;
+  background: #ccc;
+  white-space: nowrap;
+  overflow: scroll;
+  overflow-y: hidden;
+  border: 5px solid rgba(50, 50, 50, 0.75);
+  padding-bottom: 5px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+
+  /* IE - scrollbar styles (Fuck IE) */
+  scrollbar-base-color: #a5a5a5;
+  scrollbar-face-color: #ccc;
+}
+
+#gallery .gallery-thumbnails::-webkit-scrollbar {
+  width: 10px;
+}
+
+#gallery .gallery-thumbnails::-webkit-scrollbar-track {
+  background: #ccc;
+  -webkit-box-shadow: inset 0 0 10px #808080;
+
+  -webkit-border-radius: 5px;
+}
+
+#gallery .gallery-thumbnails::-webkit-scrollbar-thumb {
+  background: #a2a0a0;
+  -webkit-box-shadow: inset 0 0 10px #000;
+
+  -webkit-border-radius: 5px;
+}
+
+#gallery .gallery-thumbnails img {
+  display: inline;
+  width: auto;
+  height: 90px;
+  margin: 5px;
+
+  opacity: 0.75;
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+#gallery .gallery-thumbnails img:hover {
+  opacity: 1;
+}
+
+#gallery .gallery-display {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: #ccc;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#gallery .gallery-display span {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#gallery .gallery-display img {
+  width: auto;
+  height: 400px;
+  margin: auto;
+  border: 1px solid black;
+}
