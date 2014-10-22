@@ -159,6 +159,10 @@ html, body {
   height: 200px;
 }
 
+.content-contact {
+  line-height: 200px;
+}
+
 #media {
   width: 100%;
   min-width: 900px;
