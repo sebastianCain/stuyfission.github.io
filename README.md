@@ -1,6 +1,9 @@
 FTC web repository
 ========
 Convention:
+- All files must be named appropriately.
+  - No spaces.
+  - Use underscores or camel-case.
 - All files must have a trailing newline.
 - Use 2 space tabs (no tab characters).
 - Align parameters, tags, function calls, etc.
