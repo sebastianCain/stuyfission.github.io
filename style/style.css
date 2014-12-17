@@ -5,7 +5,18 @@
  * Author: Alvin Lin (alvin.lin@stuypulse.com)
  */
 
-/* Global Styles and Class */
+/* Global Styles and Classes */
+
+@font-face {
+  font-family: Corbel;
+  src: url('../data/corbel.ttf');
+}
+
+@font-face {
+  font-family: Corbel;
+  src: url('../data/corbel_bold.ttf');
+  font-weight: bold;
+}
 
 /* Removes the need to extra math to account for border width and
  * padding when calculating the width/height of an element.
@@ -40,7 +51,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Corbel", sans-serif;
 }
 
 #container {
@@ -52,10 +63,10 @@ html, body {
 
 #banner {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: #000000;
 
-  padding-left: 100px;
+  padding-left: 120px;
   font-size: 50px;
   line-height: 50px;
 }
@@ -64,11 +75,11 @@ html, body {
   position: absolute;
   left: 0;
   width: auto;
-  height: 100px;
+  height: 120px;
 }
 
 #banner-text {
-  width: 400px;
+  width: 450px;
   height: 100%;
   text-align: left;
   color: #fff;
@@ -83,7 +94,7 @@ html, body {
 
 #banner-text h1 {
   float: left;
-  font-size: 40px;
+  font-size: 60px;
   padding: 0;
   margin: 0;
 }
