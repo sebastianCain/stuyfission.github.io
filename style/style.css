@@ -80,7 +80,7 @@ html, body {
 
 #banner-text {
   width: 450px;
-  height: 100%;
+  height: 120px;
   text-align: left;
   color: #fff;
 }
@@ -103,10 +103,42 @@ html, body {
   color: #ec2802;
 }
 
+#banner-navbar {
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: 120px;
+}
+
+#banner-navbar .banner-navbar-section {
+  display: inline-block;
+  height: 120px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+#banner-navbar .banner-navbar-section:hover {
+  background-color: #ec2802;
+}
+
+#banner-navbar img {
+  width: auto;
+  height: 120px;
+  margin: 0;
+}
+
 #home-slideshow {
   position: relative;
   width: 100%;
   height: 500px;
+  z-index: 1;
 }
 
 #home-slideshow::after {
@@ -123,7 +155,6 @@ html, body {
   background-image: url('../data/gallery/javits_center.jpg');
   background-size: cover;
   opacity: 0.6;
-  z-index: -1;
 }
 
 #home-content {
@@ -133,11 +164,11 @@ html, body {
 
 #copyright {
   width: 100%;
-  height: 75px;
+  height: 50px;
   padding-left: 10px;
   background-color: #000;
 
-  font-size: 30px;
-  line-height: 75px;
+  font-size: 20px;
+  line-height: 50px;
   color: #fff;
 }
