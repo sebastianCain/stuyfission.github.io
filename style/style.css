@@ -126,6 +126,7 @@ html, body {
 
 #banner-navbar .banner-navbar-section:hover {
   background-color: #ec2802;
+  cursor: pointer;
 }
 
 #banner-navbar img {
